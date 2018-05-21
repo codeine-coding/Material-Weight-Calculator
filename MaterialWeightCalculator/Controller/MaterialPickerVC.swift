@@ -18,7 +18,9 @@ class MaterialPickerVC: UIViewController {
     @IBOutlet weak var widthTxt: UITextField!
     @IBOutlet weak var lengthTxt: UITextField!
     @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var poundsLabel: UILabel!
     @IBOutlet weak var calculateBtn: UIButton!
+    @IBOutlet weak var clearFieldsBtn: RadiusButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +72,21 @@ class MaterialPickerVC: UIViewController {
             let calculatedValue = round((selectedMaterialFactor! * Double(t)! * Double(w)! * Double(l)!) * 1000) / 1000
             weightLabel.text = String(calculatedValue)
         }
+        poundsLabel.isHidden = false
+        weightLabel.isHidden = false
+        clearFieldsBtn.isHidden = false
+        clearFieldsBtn.isEnabled = true
         
+    }
+    @IBAction func clearFieldsBtnPressed(_ sender: Any) {
+        materialTextField.text = ""
+        thicknessTxt.text = ""
+        widthTxt.text = ""
+        lengthTxt.text = ""
+        weightLabel.isHidden = true
+        poundsLabel.isHidden = true
+        calculateBtn.isEnabled = false
+        clearFieldsBtn.isHidden = true
     }
 }
 

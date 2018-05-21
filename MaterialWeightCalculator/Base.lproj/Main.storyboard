@@ -123,8 +123,8 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVb-Dt-fh7">
-                                        <rect key="frame" x="8" y="256" width="359" height="0.0"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVb-Dt-fh7">
+                                        <rect key="frame" x="8" y="256" width="359" height="43"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                         <color key="textColor" red="0.23650478620000001" green="0.79926976890000001" blue="0.33799331529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -143,6 +143,27 @@
                                             <action selector="calculateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMr-Z4-45H"/>
                                         </connections>
                                     </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZo-Qw-hr3">
+                                        <rect key="frame" x="152" y="301" width="71" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AP9-Up-vDD" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="519" width="359" height="60"/>
+                                        <color key="backgroundColor" red="0.23650478623542537" green="0.79926976891605839" blue="0.33799331533673288" alpha="0.70717138452914796" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="mG6-Ok-DKn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <state key="normal" title="Clear Fields">
+                                            <color key="titleColor" red="0.99586588144302368" green="1" blue="0.9999271035194397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calculateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YkP-AK-RIz"/>
+                                            <action selector="clearFieldsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAS-5W-Goa"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -150,21 +171,26 @@
                                     <constraint firstItem="02K-kr-eeu" firstAttribute="top" secondItem="7WO-n5-hhf" secondAttribute="bottom" constant="25" id="1h2-yE-61j"/>
                                     <constraint firstItem="7WO-n5-hhf" firstAttribute="centerX" secondItem="bpx-Ma-2CW" secondAttribute="centerX" id="3sc-vm-zIu"/>
                                     <constraint firstAttribute="trailing" secondItem="b69-8A-4XC" secondAttribute="trailing" constant="8" id="58K-3D-7Da"/>
-                                    <constraint firstAttribute="trailing" secondItem="WVb-Dt-fh7" secondAttribute="trailing" constant="8" id="8WX-vP-BwY"/>
                                     <constraint firstItem="WVb-Dt-fh7" firstAttribute="centerX" secondItem="bpx-Ma-2CW" secondAttribute="centerX" id="CNC-ec-B9z"/>
                                     <constraint firstAttribute="bottom" secondItem="b69-8A-4XC" secondAttribute="bottom" constant="20" id="Cho-LW-PC3"/>
+                                    <constraint firstItem="AP9-Up-vDD" firstAttribute="centerX" secondItem="bpx-Ma-2CW" secondAttribute="centerX" id="Eo4-lL-1KF"/>
                                     <constraint firstItem="02K-kr-eeu" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="FyT-yv-bTn"/>
+                                    <constraint firstItem="iZo-Qw-hr3" firstAttribute="centerX" secondItem="bpx-Ma-2CW" secondAttribute="centerX" id="Ois-3n-OfM"/>
+                                    <constraint firstAttribute="trailing" secondItem="WVb-Dt-fh7" secondAttribute="trailing" constant="8" id="PTG-5V-YLb"/>
                                     <constraint firstItem="fty-Sg-OxB" firstAttribute="top" secondItem="RWV-dr-NkK" secondAttribute="bottom" constant="2" id="Qzp-uA-Ytz"/>
                                     <constraint firstItem="fty-Sg-OxB" firstAttribute="leading" secondItem="RWV-dr-NkK" secondAttribute="leading" id="R9z-dB-YZ1"/>
                                     <constraint firstItem="RWV-dr-NkK" firstAttribute="leading" secondItem="02K-kr-eeu" secondAttribute="trailing" constant="8" id="TXx-tL-vEU"/>
+                                    <constraint firstItem="b69-8A-4XC" firstAttribute="top" secondItem="AP9-Up-vDD" secondAttribute="bottom" constant="8" id="Vv9-83-cAl"/>
+                                    <constraint firstItem="AP9-Up-vDD" firstAttribute="width" secondItem="b69-8A-4XC" secondAttribute="width" id="X3g-AR-sbZ"/>
                                     <constraint firstItem="FTp-9k-0fz" firstAttribute="top" secondItem="fty-Sg-OxB" secondAttribute="bottom" constant="35" id="c8R-TU-ve0"/>
                                     <constraint firstItem="RWV-dr-NkK" firstAttribute="centerY" secondItem="02K-kr-eeu" secondAttribute="centerY" id="dVE-tl-e9D"/>
                                     <constraint firstItem="7WO-n5-hhf" firstAttribute="top" secondItem="bpx-Ma-2CW" secondAttribute="top" constant="28" id="eii-DD-0bW"/>
                                     <constraint firstItem="b69-8A-4XC" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="esB-CL-Vqp"/>
+                                    <constraint firstItem="WVb-Dt-fh7" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="gr8-Ic-Xvv"/>
                                     <constraint firstItem="WVb-Dt-fh7" firstAttribute="top" secondItem="FTp-9k-0fz" secondAttribute="bottom" constant="40" id="kR1-WG-skZ"/>
                                     <constraint firstItem="fty-Sg-OxB" firstAttribute="width" secondItem="RWV-dr-NkK" secondAttribute="width" id="uN0-Yn-WuU"/>
+                                    <constraint firstItem="iZo-Qw-hr3" firstAttribute="top" secondItem="WVb-Dt-fh7" secondAttribute="bottom" constant="2" id="w77-Ty-U5V"/>
                                     <constraint firstAttribute="trailing" secondItem="RWV-dr-NkK" secondAttribute="trailing" constant="8" id="xh4-eI-IXU"/>
-                                    <constraint firstItem="WVb-Dt-fh7" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="zI0-FX-IcJ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -180,8 +206,10 @@
                     <connections>
                         <outlet property="bgView" destination="bpx-Ma-2CW" id="N5h-iq-rKf"/>
                         <outlet property="calculateBtn" destination="b69-8A-4XC" id="SQ9-wB-isj"/>
+                        <outlet property="clearFieldsBtn" destination="AP9-Up-vDD" id="7ys-SF-egR"/>
                         <outlet property="lengthTxt" destination="rOU-uS-jBV" id="VWA-pT-29V"/>
                         <outlet property="materialTextField" destination="RWV-dr-NkK" id="uaJ-Ip-1SF"/>
+                        <outlet property="poundsLabel" destination="iZo-Qw-hr3" id="Uu9-3a-S7B"/>
                         <outlet property="thicknessTxt" destination="Isz-Sx-dF8" id="bQn-gI-AEr"/>
                         <outlet property="weightLabel" destination="WVb-Dt-fh7" id="Mw7-CF-B50"/>
                         <outlet property="widthTxt" destination="ME0-aj-e7H" id="VJO-vS-ohM"/>
