@@ -31,6 +31,8 @@ class MaterialPickerVC: UIViewController {
         materialTextField.inputView = materialPicker
         setupToolbar()
         
+        let closeTouch = UITapGestureRecognizer(target: self, action: #selector(MaterialPickerVC.closeTap(_:)))
+        bgView.addGestureRecognizer(closeTouch)
     }
     
     func setupToolbar() {
@@ -43,7 +45,14 @@ class MaterialPickerVC: UIViewController {
         toolbar.isUserInteractionEnabled = true
         
         materialTextField.inputAccessoryView = toolbar
+        thicknessTxt.inputAccessoryView = toolbar
+        widthTxt.inputAccessoryView = toolbar
         lengthTxt.inputAccessoryView = toolbar
+        
+    }
+    
+    @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
+        dismissKeyboard()
     }
     
     @objc func dismissKeyboard() {
