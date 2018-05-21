@@ -15,6 +15,8 @@
 		9FD0007920B1D1960007CA2A /* MaterialWeightCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0007820B1D1960007CA2A /* MaterialWeightCalculatorTests.swift */; };
 		9FD000B120B222320007CA2A /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000B020B222320007CA2A /* Material.swift */; };
 		9FD000B420B2230C0007CA2A /* MaterialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000B320B2230C0007CA2A /* MaterialService.swift */; };
+		9FD000BC20B25E930007CA2A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000BB20B25E930007CA2A /* CustomTextField.swift */; };
+		9FD000BE20B260B60007CA2A /* RadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000BD20B260B60007CA2A /* RadiusButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		589A2F0BD6C58BFB8CF586CD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		9FD0006020B1D1950007CA2A /* MaterialWeightCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialWeightCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD0006320B1D1950007CA2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD0006520B1D1950007CA2A /* MaterialPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerVC.swift; sourceTree = "<group>"; };
@@ -41,6 +42,8 @@
 		9FD0007A20B1D1960007CA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FD000B020B222320007CA2A /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		9FD000B320B2230C0007CA2A /* MaterialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialService.swift; sourceTree = "<group>"; };
+		9FD000BB20B25E930007CA2A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		9FD000BD20B260B60007CA2A /* RadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +70,6 @@
 				9FD0006220B1D1950007CA2A /* MaterialWeightCalculator */,
 				9FD0007720B1D1960007CA2A /* MaterialWeightCalculatorTests */,
 				9FD0006120B1D1950007CA2A /* Products */,
-				589A2F0BD6C58BFB8CF586CD /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +134,8 @@
 		9FD000BA20B257D20007CA2A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9FD000BB20B25E930007CA2A /* CustomTextField.swift */,
+				9FD000BD20B260B60007CA2A /* RadiusButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +245,8 @@
 				9FD0006620B1D1950007CA2A /* MaterialPickerVC.swift in Sources */,
 				9FD000B120B222320007CA2A /* Material.swift in Sources */,
 				9FD0006420B1D1950007CA2A /* AppDelegate.swift in Sources */,
+				9FD000BC20B25E930007CA2A /* CustomTextField.swift in Sources */,
+				9FD000BE20B260B60007CA2A /* RadiusButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

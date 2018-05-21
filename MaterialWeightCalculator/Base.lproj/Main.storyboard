@@ -27,46 +27,45 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose material:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02K-kr-eeu">
-                                        <rect key="frame" x="8" y="73.5" width="129" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Material:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02K-kr-eeu">
+                                        <rect key="frame" x="8" y="73.5" width="66" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fty-Sg-OxB">
-                                        <rect key="frame" x="145" y="96.5" width="222" height="2"/>
+                                        <rect key="frame" x="82" y="96.5" width="285" height="2"/>
                                         <color key="backgroundColor" red="0.23650478620000001" green="0.79926976890000001" blue="0.33799331529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="6lx-kH-aST"/>
-                                            <constraint firstAttribute="width" constant="222" id="d92-H2-I7t"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Material" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWV-dr-NkK">
-                                        <rect key="frame" x="145" y="73.5" width="222" height="21"/>
+                                        <rect key="frame" x="82" y="73.5" width="285" height="21"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="FTp-9k-0fz">
-                                        <rect key="frame" x="18.5" y="133.5" width="338" height="82.5"/>
+                                        <rect key="frame" x="34" y="133.5" width="308" height="82.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tKn-Wr-n4I">
-                                                <rect key="frame" x="0.0" y="0.0" width="108" height="82.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="82.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thickness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KD2-mI-Zvv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="98" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Isz-Sx-dF8">
-                                                        <rect key="frame" x="0.0" y="22.5" width="108" height="60"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Isz-Sx-dF8" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="22.5" width="98" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="i2A-oD-ivJ"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="wXc-ia-jzU"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="wXc-ia-jzU"/>
                                                         </constraints>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
                                                     </textField>
                                                 </subviews>
@@ -75,22 +74,22 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3Ul-hR-UXN">
-                                                <rect key="frame" x="115" y="0.0" width="108" height="82.5"/>
+                                                <rect key="frame" x="105" y="0.0" width="98" height="82.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Width" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhe-z8-ai2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="98" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-aj-e7H">
-                                                        <rect key="frame" x="0.0" y="22.5" width="108" height="60"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-aj-e7H" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="22.5" width="98" height="60"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="0mu-YZ-s90"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="0mu-YZ-s90"/>
                                                             <constraint firstAttribute="height" constant="60" id="lpT-wg-wD4"/>
                                                         </constraints>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
                                                     </textField>
                                                 </subviews>
@@ -99,22 +98,22 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vZL-TT-OKn">
-                                                <rect key="frame" x="230" y="0.0" width="108" height="82.5"/>
+                                                <rect key="frame" x="210" y="0.0" width="98" height="82.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0q3-BL-rDV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="98" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOU-uS-jBV">
-                                                        <rect key="frame" x="0.0" y="22.5" width="108" height="60"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOU-uS-jBV" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="22.5" width="98" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="DgR-7W-rep"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="NdR-yM-1zu"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="NdR-yM-1zu"/>
                                                         </constraints>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                                     </textField>
                                                 </subviews>
@@ -130,7 +129,7 @@
                                         <color key="textColor" red="0.23650478620000001" green="0.79926976890000001" blue="0.33799331529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b69-8A-4XC">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b69-8A-4XC" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                         <rect key="frame" x="8" y="587" width="359" height="60"/>
                                         <color key="backgroundColor" red="0.23650478623542537" green="0.79926976891605839" blue="0.33799331533673288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -163,6 +162,7 @@
                                     <constraint firstItem="7WO-n5-hhf" firstAttribute="top" secondItem="bpx-Ma-2CW" secondAttribute="top" constant="28" id="eii-DD-0bW"/>
                                     <constraint firstItem="b69-8A-4XC" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="esB-CL-Vqp"/>
                                     <constraint firstItem="WVb-Dt-fh7" firstAttribute="top" secondItem="FTp-9k-0fz" secondAttribute="bottom" constant="40" id="kR1-WG-skZ"/>
+                                    <constraint firstItem="fty-Sg-OxB" firstAttribute="width" secondItem="RWV-dr-NkK" secondAttribute="width" id="uN0-Yn-WuU"/>
                                     <constraint firstAttribute="trailing" secondItem="RWV-dr-NkK" secondAttribute="trailing" constant="8" id="xh4-eI-IXU"/>
                                     <constraint firstItem="WVb-Dt-fh7" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="zI0-FX-IcJ"/>
                                 </constraints>
