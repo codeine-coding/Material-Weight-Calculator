@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		589A2F0BD6C58BFB8CF586CD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		9FD0006020B1D1950007CA2A /* MaterialWeightCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialWeightCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD0006320B1D1950007CA2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD0006520B1D1950007CA2A /* MaterialPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerVC.swift; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 				9FD0006220B1D1950007CA2A /* MaterialWeightCalculator */,
 				9FD0007720B1D1960007CA2A /* MaterialWeightCalculatorTests */,
 				9FD0006120B1D1950007CA2A /* Products */,
+				589A2F0BD6C58BFB8CF586CD /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +83,11 @@
 		9FD0006220B1D1950007CA2A /* MaterialWeightCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				9FD000BA20B257D20007CA2A /* View */,
 				9FD000B220B222F90007CA2A /* Services */,
 				9FD000AF20B2221D0007CA2A /* Model */,
+				9FD000B920B257BF0007CA2A /* Controller */,
 				9FD0006320B1D1950007CA2A /* AppDelegate.swift */,
-				9FD0006520B1D1950007CA2A /* MaterialPickerVC.swift */,
 				9FD0006720B1D1950007CA2A /* Main.storyboard */,
 				9FD0006A20B1D1960007CA2A /* Assets.xcassets */,
 				9FD0006C20B1D1960007CA2A /* LaunchScreen.storyboard */,
@@ -116,6 +119,21 @@
 				9FD000B320B2230C0007CA2A /* MaterialService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		9FD000B920B257BF0007CA2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FD0006520B1D1950007CA2A /* MaterialPickerVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9FD000BA20B257D20007CA2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
