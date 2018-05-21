@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FD0006420B1D1950007CA2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0006320B1D1950007CA2A /* AppDelegate.swift */; };
+		9FD0006620B1D1950007CA2A /* MaterialPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0006520B1D1950007CA2A /* MaterialPickerVC.swift */; };
+		9FD0006920B1D1950007CA2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD0006720B1D1950007CA2A /* Main.storyboard */; };
+		9FD0006B20B1D1960007CA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD0006A20B1D1960007CA2A /* Assets.xcassets */; };
+		9FD0006E20B1D1960007CA2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD0006C20B1D1960007CA2A /* LaunchScreen.storyboard */; };
+		9FD0007920B1D1960007CA2A /* MaterialWeightCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0007820B1D1960007CA2A /* MaterialWeightCalculatorTests.swift */; };
+		9FD000B120B222320007CA2A /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000B020B222320007CA2A /* Material.swift */; };
+		9FD000B420B2230C0007CA2A /* MaterialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000B320B2230C0007CA2A /* MaterialService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FD0007520B1D1960007CA2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FD0005820B1D1950007CA2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FD0005F20B1D1950007CA2A;
+			remoteInfo = MaterialWeightCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FD0006020B1D1950007CA2A /* MaterialWeightCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialWeightCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD0006320B1D1950007CA2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FD0006520B1D1950007CA2A /* MaterialPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerVC.swift; sourceTree = "<group>"; };
+		9FD0006820B1D1950007CA2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FD0006A20B1D1960007CA2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FD0006D20B1D1960007CA2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FD0006F20B1D1960007CA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD0007420B1D1960007CA2A /* MaterialWeightCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialWeightCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD0007820B1D1960007CA2A /* MaterialWeightCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialWeightCalculatorTests.swift; sourceTree = "<group>"; };
+		9FD0007A20B1D1960007CA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD000B020B222320007CA2A /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		9FD000B320B2230C0007CA2A /* MaterialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FD0005D20B1D1950007CA2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD0007120B1D1960007CA2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FD0005720B1D1950007CA2A = {
+			isa = PBXGroup;
+			children = (
+				9FD0006220B1D1950007CA2A /* MaterialWeightCalculator */,
+				9FD0007720B1D1960007CA2A /* MaterialWeightCalculatorTests */,
+				9FD0006120B1D1950007CA2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FD0006120B1D1950007CA2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FD0006020B1D1950007CA2A /* MaterialWeightCalculator.app */,
+				9FD0007420B1D1960007CA2A /* MaterialWeightCalculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FD0006220B1D1950007CA2A /* MaterialWeightCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				9FD000B220B222F90007CA2A /* Services */,
+				9FD000AF20B2221D0007CA2A /* Model */,
+				9FD0006320B1D1950007CA2A /* AppDelegate.swift */,
+				9FD0006520B1D1950007CA2A /* MaterialPickerVC.swift */,
+				9FD0006720B1D1950007CA2A /* Main.storyboard */,
+				9FD0006A20B1D1960007CA2A /* Assets.xcassets */,
+				9FD0006C20B1D1960007CA2A /* LaunchScreen.storyboard */,
+				9FD0006F20B1D1960007CA2A /* Info.plist */,
+			);
+			path = MaterialWeightCalculator;
+			sourceTree = "<group>";
+		};
+		9FD0007720B1D1960007CA2A /* MaterialWeightCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FD0007820B1D1960007CA2A /* MaterialWeightCalculatorTests.swift */,
+				9FD0007A20B1D1960007CA2A /* Info.plist */,
+			);
+			path = MaterialWeightCalculatorTests;
+			sourceTree = "<group>";
+		};
+		9FD000AF20B2221D0007CA2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FD000B020B222320007CA2A /* Material.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FD000B220B222F90007CA2A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9FD000B320B2230C0007CA2A /* MaterialService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FD0005F20B1D1950007CA2A /* MaterialWeightCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD0007D20B1D1960007CA2A /* Build configuration list for PBXNativeTarget "MaterialWeightCalculator" */;
+			buildPhases = (
+				9FD0005C20B1D1950007CA2A /* Sources */,
+				9FD0005D20B1D1950007CA2A /* Frameworks */,
+				9FD0005E20B1D1950007CA2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaterialWeightCalculator;
+			productName = MaterialWeightCalculator;
+			productReference = 9FD0006020B1D1950007CA2A /* MaterialWeightCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FD0007320B1D1960007CA2A /* MaterialWeightCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD0008020B1D1960007CA2A /* Build configuration list for PBXNativeTarget "MaterialWeightCalculatorTests" */;
+			buildPhases = (
+				9FD0007020B1D1960007CA2A /* Sources */,
+				9FD0007120B1D1960007CA2A /* Frameworks */,
+				9FD0007220B1D1960007CA2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FD0007620B1D1960007CA2A /* PBXTargetDependency */,
+			);
+			name = MaterialWeightCalculatorTests;
+			productName = MaterialWeightCalculatorTests;
+			productReference = 9FD0007420B1D1960007CA2A /* MaterialWeightCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FD0005820B1D1950007CA2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Allen Whearry";
+				TargetAttributes = {
+					9FD0005F20B1D1950007CA2A = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					9FD0007320B1D1960007CA2A = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 9FD0005F20B1D1950007CA2A;
+					};
+				};
+			};
+			buildConfigurationList = 9FD0005B20B1D1950007CA2A /* Build configuration list for PBXProject "MaterialWeightCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FD0005720B1D1950007CA2A;
+			productRefGroup = 9FD0006120B1D1950007CA2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FD0005F20B1D1950007CA2A /* MaterialWeightCalculator */,
+				9FD0007320B1D1960007CA2A /* MaterialWeightCalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FD0005E20B1D1950007CA2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD0006E20B1D1960007CA2A /* LaunchScreen.storyboard in Resources */,
+				9FD0006B20B1D1960007CA2A /* Assets.xcassets in Resources */,
+				9FD0006920B1D1950007CA2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD0007220B1D1960007CA2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FD0005C20B1D1950007CA2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD000B420B2230C0007CA2A /* MaterialService.swift in Sources */,
+				9FD0006620B1D1950007CA2A /* MaterialPickerVC.swift in Sources */,
+				9FD000B120B222320007CA2A /* Material.swift in Sources */,
+				9FD0006420B1D1950007CA2A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD0007020B1D1960007CA2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD0007920B1D1960007CA2A /* MaterialWeightCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FD0007620B1D1960007CA2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FD0005F20B1D1950007CA2A /* MaterialWeightCalculator */;
+			targetProxy = 9FD0007520B1D1960007CA2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FD0006720B1D1950007CA2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FD0006820B1D1950007CA2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FD0006C20B1D1960007CA2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FD0006D20B1D1960007CA2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FD0007B20B1D1960007CA2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FD0007C20B1D1960007CA2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FD0007E20B1D1960007CA2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaterialWeightCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeinecoding.MaterialWeightCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9FD0007F20B1D1960007CA2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaterialWeightCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeinecoding.MaterialWeightCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9FD0008120B1D1960007CA2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaterialWeightCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeinecoding.MaterialWeightCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaterialWeightCalculator.app/MaterialWeightCalculator";
+			};
+			name = Debug;
+		};
+		9FD0008220B1D1960007CA2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaterialWeightCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeinecoding.MaterialWeightCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaterialWeightCalculator.app/MaterialWeightCalculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FD0005B20B1D1950007CA2A /* Build configuration list for PBXProject "MaterialWeightCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD0007B20B1D1960007CA2A /* Debug */,
+				9FD0007C20B1D1960007CA2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD0007D20B1D1960007CA2A /* Build configuration list for PBXNativeTarget "MaterialWeightCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD0007E20B1D1960007CA2A /* Debug */,
+				9FD0007F20B1D1960007CA2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD0008020B1D1960007CA2A /* Build configuration list for PBXNativeTarget "MaterialWeightCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD0008120B1D1960007CA2A /* Debug */,
+				9FD0008220B1D1960007CA2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FD0005820B1D1950007CA2A /* Project object */;
+}
