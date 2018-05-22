@@ -17,6 +17,7 @@
 		9FD000B420B2230C0007CA2A /* MaterialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000B320B2230C0007CA2A /* MaterialService.swift */; };
 		9FD000BC20B25E930007CA2A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000BB20B25E930007CA2A /* CustomTextField.swift */; };
 		9FD000BE20B260B60007CA2A /* RadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000BD20B260B60007CA2A /* RadiusButton.swift */; };
+		9FD000C120B32F900007CA2A /* CalculateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000C020B32F900007CA2A /* CalculateFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9FD000B320B2230C0007CA2A /* MaterialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialService.swift; sourceTree = "<group>"; };
 		9FD000BB20B25E930007CA2A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		9FD000BD20B260B60007CA2A /* RadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusButton.swift; sourceTree = "<group>"; };
+		9FD000C020B32F900007CA2A /* CalculateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		9FD0006220B1D1950007CA2A /* MaterialWeightCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				9FD000BF20B32F720007CA2A /* Utilities */,
 				9FD000BA20B257D20007CA2A /* View */,
 				9FD000B220B222F90007CA2A /* Services */,
 				9FD000AF20B2221D0007CA2A /* Model */,
@@ -138,6 +141,14 @@
 				9FD000BD20B260B60007CA2A /* RadiusButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9FD000BF20B32F720007CA2A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9FD000C020B32F900007CA2A /* CalculateFunctions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FD000B420B2230C0007CA2A /* MaterialService.swift in Sources */,
+				9FD000C120B32F900007CA2A /* CalculateFunctions.swift in Sources */,
 				9FD0006620B1D1950007CA2A /* MaterialPickerVC.swift in Sources */,
 				9FD000B120B222320007CA2A /* Material.swift in Sources */,
 				9FD0006420B1D1950007CA2A /* AppDelegate.swift in Sources */,

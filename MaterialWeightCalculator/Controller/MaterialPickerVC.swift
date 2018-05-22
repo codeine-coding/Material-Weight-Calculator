@@ -66,10 +66,10 @@ class MaterialPickerVC: UIViewController {
         if (thicknessTxt.text  == "") && (widthTxt.text == "") && (lengthTxt.text == "") && selectedMaterialFactor != nil {
             weightLabel.text = "no weights supplied"
         } else {
-            guard let t = thicknessTxt.text else {return}
-            guard let w = widthTxt.text else {return}
-            guard let l = lengthTxt.text else {return}
-            let calculatedValue = round((selectedMaterialFactor! * Double(t)! * Double(w)! * Double(l)!) * 1000) / 1000
+            let calculatedValue = calculateSheet(factor: selectedMaterialFactor!,
+                                                 thickness: thicknessTxt.text!,
+                                                 width: widthTxt.text!,
+                                                 length: lengthTxt.text!)
             weightLabel.text = String(calculatedValue)
         }
         poundsLabel.isHidden = false
