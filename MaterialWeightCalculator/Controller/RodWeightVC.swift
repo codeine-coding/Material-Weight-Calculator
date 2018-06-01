@@ -1,39 +1,42 @@
 //
-//  ViewController.swift
+//  RodWeightVC.swift
 //  MaterialWeightCalculator
 //
-//  Created by Allen Whearry on 5/20/18.
+//  Created by Allen Whearry on 5/31/18.
 //  Copyright © 2018 Allen Whearry. All rights reserved.
 //
 
 import UIKit
 
-class MaterialPickerVC: UIViewController {
-
-    @IBOutlet weak var materialTextField: UITextField!
+class RodWeightVC: UIViewController {
+    
+    // vars
     var selectedMaterial: String?
     var selectedMaterialFactor: Double?
+    
+    // outlets
+    @IBOutlet weak var rodMaterialSelect: UITextField!
     @IBOutlet weak var bgView: UIView!
-    @IBOutlet weak var thicknessTxt: UITextField!
-    @IBOutlet weak var widthTxt: UITextField!
+    @IBOutlet weak var diameterTxt: UITextField!
     @IBOutlet weak var lengthTxt: UITextField!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var poundsLabel: UILabel!
     @IBOutlet weak var calculateBtn: UIButton!
     @IBOutlet weak var clearFieldsBtn: RadiusButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPicker()
+        // Do any additional setup after loading the view.
     }
-
+    
     func setupPicker() {
         let materialPicker = UIPickerView()
         materialPicker.delegate = self
-        materialTextField.inputView = materialPicker
+        rodMaterialSelect.inputView = materialPicker
         setupToolbar()
         
-        let closeTouch = UITapGestureRecognizer(target: self, action: #selector(MaterialPickerVC.closeTap(_:)))
+        let closeTouch = UITapGestureRecognizer(target: self, action: #selector(SheetWeightVC.closeTap(_:)))
         bgView.addGestureRecognizer(closeTouch)
     }
     
@@ -41,14 +44,13 @@ class MaterialPickerVC: UIViewController {
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         
-        let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(MaterialPickerVC.dismissKeyboard))
+        let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(SheetWeightVC.dismissKeyboard))
         
         toolbar.setItems([doneBtn], animated: false)
         toolbar.isUserInteractionEnabled = true
         
-        materialTextField.inputAccessoryView = toolbar
-        thicknessTxt.inputAccessoryView = toolbar
-        widthTxt.inputAccessoryView = toolbar
+        rodMaterialSelect.inputAccessoryView = toolbar
+        diameterTxt.inputAccessoryView = toolbar
         lengthTxt.inputAccessoryView = toolbar
         
     }
@@ -63,13 +65,12 @@ class MaterialPickerVC: UIViewController {
     
     
     @IBAction func calculateBtnPressed(_ sender: Any) {
-        if (thicknessTxt.text  == "") && (widthTxt.text == "") && (lengthTxt.text == "") && selectedMaterialFactor != nil {
+        if (diameterTxt.text  == "") && (lengthTxt.text == "") && selectedMaterialFactor != nil {
             weightLabel.text = "no weights supplied"
         } else {
-            let calculatedValue = calculateSheet(factor: selectedMaterialFactor!,
-                                                 thickness: thicknessTxt.text!,
-                                                 width: widthTxt.text!,
-                                                 length: lengthTxt.text!)
+            let calculatedValue = calculateRoundRod(factor: selectedMaterialFactor!,
+                                                    diameter: diameterTxt.text!,
+                                                    length: lengthTxt.text!)
             weightLabel.text = String(calculatedValue)
         }
         poundsLabel.isHidden = false
@@ -79,18 +80,19 @@ class MaterialPickerVC: UIViewController {
         
     }
     @IBAction func clearFieldsBtnPressed(_ sender: Any) {
-        materialTextField.text = ""
-        thicknessTxt.text = ""
-        widthTxt.text = ""
+        rodMaterialSelect.text = ""
+        diameterTxt.text = ""
         lengthTxt.text = ""
         weightLabel.isHidden = true
         poundsLabel.isHidden = true
         calculateBtn.isEnabled = false
         clearFieldsBtn.isHidden = true
     }
+
+
 }
 
-extension MaterialPickerVC: UIPickerViewDataSource, UIPickerViewDelegate {
+extension RodWeightVC: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -102,8 +104,8 @@ extension MaterialPickerVC: UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedMaterial = MaterialService.instance.getMaterials()[row].title
         selectedMaterialFactor = MaterialService.instance.getMaterials()[row].factor
-        materialTextField.text = selectedMaterial
-        calculateBtn.isEnabled = true
+         rodMaterialSelect.text = selectedMaterial
+         calculateBtn.isEnabled = true
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {

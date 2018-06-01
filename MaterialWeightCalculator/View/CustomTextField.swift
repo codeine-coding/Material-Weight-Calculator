@@ -28,7 +28,7 @@ class CustomTextField: UITextField {
     
     func setupView() {
         self.layer.cornerRadius = cornerRadius
-        self.layer.borderColor = #colorLiteral(red: 0.2365047862, green: 0.7992697689, blue: 0.3379933153, alpha: 1)
+        self.layer.borderColor = #colorLiteral(red: 0.5725490196, green: 0.1529411765, blue: 0.5607843137, alpha: 1)
         self.layer.borderWidth = CGFloat(2.0)
     }
     
