@@ -21,6 +21,7 @@ class SheetWeightVC: UIViewController {
     @IBOutlet weak var poundsLabel: UILabel!
     @IBOutlet weak var calculateBtn: UIButton!
     @IBOutlet weak var clearFieldsBtn: RadiusButton!
+    @IBOutlet weak var sheetIImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +73,7 @@ class SheetWeightVC: UIViewController {
                                                  length: lengthTxt.text!)
             weightLabel.text = String(calculatedValue)
         }
+        sheetIImage.isHidden = true
         poundsLabel.isHidden = false
         weightLabel.isHidden = false
         clearFieldsBtn.isHidden = false
@@ -87,6 +89,7 @@ class SheetWeightVC: UIViewController {
         poundsLabel.isHidden = true
         calculateBtn.isEnabled = false
         clearFieldsBtn.isHidden = true
+        sheetIImage.isHidden = false
     }
 }
 

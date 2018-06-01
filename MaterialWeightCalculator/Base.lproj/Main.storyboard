@@ -380,12 +380,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheet" translatesAutoresizingMaskIntoConstraints="NO" id="t0e-AX-dde">
+                                        <rect key="frame" x="0.0" y="239.66666666666663" width="375" height="250"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="FTp-9k-0fz" firstAttribute="centerX" secondItem="bpx-Ma-2CW" secondAttribute="centerX" id="1QK-L9-AMF"/>
                                     <constraint firstAttribute="trailing" secondItem="F4Y-Iv-fFX" secondAttribute="trailing" constant="8" id="1o4-28-LaN"/>
                                     <constraint firstAttribute="trailing" secondItem="AKO-yU-qCW" secondAttribute="trailing" id="2Dg-gD-IY7"/>
+                                    <constraint firstItem="t0e-AX-dde" firstAttribute="centerY" secondItem="bpx-Ma-2CW" secondAttribute="centerY" id="4CJ-cy-fJd"/>
                                     <constraint firstAttribute="trailing" secondItem="b69-8A-4XC" secondAttribute="trailing" constant="8" id="58K-3D-7Da"/>
                                     <constraint firstItem="F4Y-Iv-fFX" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="7QV-pH-Kkd"/>
                                     <constraint firstItem="AKO-yU-qCW" firstAttribute="top" secondItem="bpx-Ma-2CW" secondAttribute="top" id="B2g-8m-orq"/>
@@ -401,8 +405,11 @@
                                     <constraint firstItem="b69-8A-4XC" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="esB-CL-Vqp"/>
                                     <constraint firstItem="WVb-Dt-fh7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bpx-Ma-2CW" secondAttribute="leading" id="gr8-Ic-Xvv"/>
                                     <constraint firstItem="WVb-Dt-fh7" firstAttribute="top" secondItem="FTp-9k-0fz" secondAttribute="bottom" constant="40" id="kR1-WG-skZ"/>
+                                    <constraint firstItem="t0e-AX-dde" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" id="lVa-4J-xyY"/>
                                     <constraint firstItem="F4Y-Iv-fFX" firstAttribute="top" secondItem="AKO-yU-qCW" secondAttribute="bottom" constant="20" id="nte-Nm-PHP"/>
+                                    <constraint firstItem="t0e-AX-dde" firstAttribute="centerX" secondItem="bpx-Ma-2CW" secondAttribute="centerX" id="uEf-Fi-SPM"/>
                                     <constraint firstItem="iZo-Qw-hr3" firstAttribute="top" secondItem="WVb-Dt-fh7" secondAttribute="bottom" constant="2" id="w77-Ty-U5V"/>
+                                    <constraint firstAttribute="trailing" secondItem="t0e-AX-dde" secondAttribute="trailing" id="zmY-kf-Sd9"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -417,12 +424,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Sheet" id="DMF-7W-Wz5"/>
                     <connections>
-                        <outlet property="bgView" destination="bpx-Ma-2CW" id="N5h-iq-rKf"/>
+                        <outlet property="bgView" destination="bpx-Ma-2CW" id="eoP-4C-lpp"/>
                         <outlet property="calculateBtn" destination="b69-8A-4XC" id="SQ9-wB-isj"/>
                         <outlet property="clearFieldsBtn" destination="AP9-Up-vDD" id="7ys-SF-egR"/>
                         <outlet property="lengthTxt" destination="rOU-uS-jBV" id="VWA-pT-29V"/>
                         <outlet property="materialTextField" destination="RWV-dr-NkK" id="uaJ-Ip-1SF"/>
                         <outlet property="poundsLabel" destination="iZo-Qw-hr3" id="Uu9-3a-S7B"/>
+                        <outlet property="sheetIImage" destination="t0e-AX-dde" id="d0a-4A-jsI"/>
                         <outlet property="thicknessTxt" destination="Isz-Sx-dF8" id="bQn-gI-AEr"/>
                         <outlet property="weightLabel" destination="WVb-Dt-fh7" id="Mw7-CF-B50"/>
                         <outlet property="widthTxt" destination="ME0-aj-e7H" id="VJO-vS-ohM"/>
@@ -430,7 +438,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="-264"/>
+            <point key="canvasLocation" x="0.80000000000000004" y="-264.53201970443348"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sheet" width="250" height="250"/>
+    </resources>
 </document>
