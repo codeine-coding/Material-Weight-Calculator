@@ -23,7 +23,8 @@ class RodWeightVC: UIViewController {
     @IBOutlet weak var poundsLabel: UILabel!
     @IBOutlet weak var calculateBtn: UIButton!
     @IBOutlet weak var clearFieldsBtn: RadiusButton!
-
+    @IBOutlet weak var rodImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPicker()
@@ -73,6 +74,7 @@ class RodWeightVC: UIViewController {
                                                     length: lengthTxt.text!)
             weightLabel.text = String(calculatedValue)
         }
+        rodImage.isHidden = true
         poundsLabel.isHidden = false
         weightLabel.isHidden = false
         clearFieldsBtn.isHidden = false
@@ -87,6 +89,7 @@ class RodWeightVC: UIViewController {
         poundsLabel.isHidden = true
         calculateBtn.isEnabled = false
         clearFieldsBtn.isHidden = true
+        rodImage.isHidden = false
     }
 
 

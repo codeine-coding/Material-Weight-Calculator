@@ -151,10 +151,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2000px-Cylinder.svg" translatesAutoresizingMaskIntoConstraints="NO" id="9jZ-v9-rV7">
+                                <rect key="frame" x="0.0" y="73" width="375" height="666"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="trW-i0-MTw" firstAttribute="trailing" secondItem="COf-H5-GIR" secondAttribute="trailing" id="3JT-EP-BVI"/>
+                            <constraint firstItem="btC-we-vk4" firstAttribute="trailing" secondItem="9jZ-v9-rV7" secondAttribute="trailing" id="9fp-ZP-DVc"/>
                             <constraint firstItem="2wz-qL-PmF" firstAttribute="centerX" secondItem="P1d-23-hYk" secondAttribute="centerX" id="CQc-Wa-SBP"/>
                             <constraint firstItem="tow-nO-SfT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P1d-23-hYk" secondAttribute="leading" id="JK9-8V-zpU"/>
                             <constraint firstItem="uFH-4A-7Ls" firstAttribute="top" secondItem="P1d-23-hYk" secondAttribute="top" id="S8Z-Pn-QP2"/>
@@ -171,10 +175,13 @@
                             <constraint firstItem="8Xd-RN-XTq" firstAttribute="top" secondItem="dZW-hs-2Qu" secondAttribute="bottom" constant="40" id="hnx-et-YoW"/>
                             <constraint firstItem="btC-we-vk4" firstAttribute="trailing" secondItem="COf-H5-GIR" secondAttribute="trailing" constant="8" id="llb-WN-4F8"/>
                             <constraint firstItem="tow-nO-SfT" firstAttribute="centerX" secondItem="P1d-23-hYk" secondAttribute="centerX" id="mMF-uS-Tka"/>
+                            <constraint firstItem="9jZ-v9-rV7" firstAttribute="centerX" secondItem="P1d-23-hYk" secondAttribute="centerX" id="oI7-7V-zh7"/>
                             <constraint firstItem="btC-we-vk4" firstAttribute="bottom" secondItem="tow-nO-SfT" secondAttribute="bottom" constant="20" id="rNe-u9-ZHx"/>
                             <constraint firstItem="COf-H5-GIR" firstAttribute="leading" secondItem="btC-we-vk4" secondAttribute="leading" constant="8" id="t7h-7v-b8F"/>
                             <constraint firstItem="COf-H5-GIR" firstAttribute="top" secondItem="uFH-4A-7Ls" secondAttribute="bottom" constant="20" id="u2t-2x-2h3"/>
                             <constraint firstItem="8Xd-RN-XTq" firstAttribute="centerX" secondItem="P1d-23-hYk" secondAttribute="centerX" id="uUl-eH-ckS"/>
+                            <constraint firstItem="9jZ-v9-rV7" firstAttribute="centerY" secondItem="P1d-23-hYk" secondAttribute="centerY" id="waB-0J-LQD"/>
+                            <constraint firstItem="9jZ-v9-rV7" firstAttribute="leading" secondItem="btC-we-vk4" secondAttribute="leading" id="y4c-3L-T4E"/>
                             <constraint firstItem="tow-nO-SfT" firstAttribute="top" secondItem="trW-i0-MTw" secondAttribute="bottom" constant="8" id="zw8-Lc-Uhp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="btC-we-vk4"/>
@@ -187,6 +194,7 @@
                         <outlet property="diameterTxt" destination="lW0-l5-iOx" id="Jfg-fA-nbC"/>
                         <outlet property="lengthTxt" destination="BC7-dM-zDr" id="8eW-Gb-36s"/>
                         <outlet property="poundsLabel" destination="2wz-qL-PmF" id="Zab-LC-YVH"/>
+                        <outlet property="rodImage" destination="9jZ-v9-rV7" id="UqG-mq-LbL"/>
                         <outlet property="rodMaterialSelect" destination="M3E-82-11A" id="WYD-c0-19F"/>
                         <outlet property="weightLabel" destination="8Xd-RN-XTq" id="Hzs-xr-HVh"/>
                     </connections>
@@ -380,8 +388,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheet" translatesAutoresizingMaskIntoConstraints="NO" id="t0e-AX-dde">
-                                        <rect key="frame" x="0.0" y="239.66666666666663" width="375" height="250"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box" translatesAutoresizingMaskIntoConstraints="NO" id="t0e-AX-dde">
+                                        <rect key="frame" x="0.0" y="372.66666666666669" width="375" height="64"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -389,7 +397,7 @@
                                     <constraint firstItem="FTp-9k-0fz" firstAttribute="centerX" secondItem="bpx-Ma-2CW" secondAttribute="centerX" id="1QK-L9-AMF"/>
                                     <constraint firstAttribute="trailing" secondItem="F4Y-Iv-fFX" secondAttribute="trailing" constant="8" id="1o4-28-LaN"/>
                                     <constraint firstAttribute="trailing" secondItem="AKO-yU-qCW" secondAttribute="trailing" id="2Dg-gD-IY7"/>
-                                    <constraint firstItem="t0e-AX-dde" firstAttribute="centerY" secondItem="bpx-Ma-2CW" secondAttribute="centerY" id="4CJ-cy-fJd"/>
+                                    <constraint firstItem="t0e-AX-dde" firstAttribute="centerY" secondItem="bpx-Ma-2CW" secondAttribute="centerY" constant="40" id="4CJ-cy-fJd"/>
                                     <constraint firstAttribute="trailing" secondItem="b69-8A-4XC" secondAttribute="trailing" constant="8" id="58K-3D-7Da"/>
                                     <constraint firstItem="F4Y-Iv-fFX" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="7QV-pH-Kkd"/>
                                     <constraint firstItem="AKO-yU-qCW" firstAttribute="top" secondItem="bpx-Ma-2CW" secondAttribute="top" id="B2g-8m-orq"/>
@@ -442,6 +450,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sheet" width="250" height="250"/>
+        <image name="2000px-Cylinder.svg" width="1020" height="666"/>
+        <image name="box" width="97" height="64"/>
     </resources>
 </document>
