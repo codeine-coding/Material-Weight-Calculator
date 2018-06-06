@@ -9,5 +9,7 @@
 import Foundation
 
 enum CalculationError: Error {
-    
+    case zeroValue
+    case invalidInput
+    case wallGreaterThanOutterField
 }
