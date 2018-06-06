@@ -10,7 +10,7 @@ import Foundation
 
 extension Double {
     
-    var round4DecimalPlaces: Double {
+    var roundMax4DecimalPlaces: Double {
         return Darwin.round(self * 1000.0) / 1000
     }
 }
