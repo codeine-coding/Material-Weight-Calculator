@@ -30,29 +30,19 @@ func calculateSquareRod(factor: Double, width: String, length: String) -> Double
     return calculatedValue
 }
 
-func calculateRoundTube(factor: Double, outsideDiameter: String, wall: String?, insideDiameter: String?, length: String) -> Double {
-    if wall == "" && insideDiameter != "" {
-        let odVal = calculateRoundRod(factor: factor, diameter: outsideDiameter, length: length)
-        let idVal = calculateRoundRod(factor: factor, diameter: insideDiameter!, length: length)
-        return odVal - idVal
-    } else {
-        let id = String(Double(outsideDiameter)! - (Double(wall!)! * 2.0))
-        let odVal = calculateRoundRod(factor: factor, diameter: outsideDiameter, length: length)
-        let idVal = calculateRoundRod(factor: factor, diameter: id, length: length)
-        return odVal - idVal
-    }
+func calculateRoundTube(factor: Double, outsideDiameter: String, wall: String, length: String) -> Double {
+    let id = String(Double(outsideDiameter)! - (Double(wall)! * 2.0))
+    let odVal = calculateRoundRod(factor: factor, diameter: outsideDiameter, length: length)
+    let idVal = calculateRoundRod(factor: factor, diameter: id, length: length)
+    let calculatedValue =  round((odVal - idVal) * 1000) / 1000
+    return calculatedValue
     
 }
 
-func calculateSquareTube(factor: Double, outsideSquareWidth: String, wall: String?, insideSquareWidth: String?, length: String) -> Double {
-    if wall == "" && insideSquareWidth != "" {
-        let osWidth = calculateSquareRod(factor: factor, width: outsideSquareWidth, length: length)
-        let isWidth = calculateSquareRod(factor: factor, width: insideSquareWidth!, length: length)
-        return osWidth - isWidth
-    } else {
-        let id = String(Double(outsideSquareWidth)! - (Double(wall!)! * 2.0))
-        let osWidth = calculateSquareRod(factor: factor, width: outsideSquareWidth, length: length)
-        let isWidth = calculateSquareRod(factor: factor, width: id, length: length)
-        return osWidth - isWidth
-    }
+func calculateSquareTube(factor: Double, outsideSquareWidth: String, wall: String, length: String) -> Double {
+    let id = String(Double(outsideSquareWidth)! - (Double(wall)! * 2.0))
+    let osWidth = calculateSquareRod(factor: factor, width: outsideSquareWidth, length: length)
+    let isWidth = calculateSquareRod(factor: factor, width: id, length: length)
+    let calculatedValue = round((osWidth - isWidth) * 1000) / 1000
+    return calculatedValue
 }
