@@ -10,6 +10,8 @@
 		9F393B8C20C0707A00BF9AC0 /* RodWeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393B8B20C0707A00BF9AC0 /* RodWeightVC.swift */; };
 		9FB7945420C7A203007A8519 /* RoundTubeWeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7945320C7A203007A8519 /* RoundTubeWeightVC.swift */; };
 		9FB7945620C7A224007A8519 /* SquareTubeWeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7945520C7A224007A8519 /* SquareTubeWeightVC.swift */; };
+		9FB7945820C7B8D8007A8519 /* CalculationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7945720C7B8D8007A8519 /* CalculationError.swift */; };
+		9FB7945A20C7C3BF007A8519 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7945920C7C3BF007A8519 /* AppExtensions.swift */; };
 		9FD0006420B1D1950007CA2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0006320B1D1950007CA2A /* AppDelegate.swift */; };
 		9FD0006620B1D1950007CA2A /* SheetWeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0006520B1D1950007CA2A /* SheetWeightVC.swift */; };
 		9FD0006920B1D1950007CA2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD0006720B1D1950007CA2A /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		9F393B8B20C0707A00BF9AC0 /* RodWeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RodWeightVC.swift; sourceTree = "<group>"; };
 		9FB7945320C7A203007A8519 /* RoundTubeWeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTubeWeightVC.swift; sourceTree = "<group>"; };
 		9FB7945520C7A224007A8519 /* SquareTubeWeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTubeWeightVC.swift; sourceTree = "<group>"; };
+		9FB7945720C7B8D8007A8519 /* CalculationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationError.swift; sourceTree = "<group>"; };
+		9FB7945920C7C3BF007A8519 /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
 		9FD0006020B1D1950007CA2A /* MaterialWeightCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialWeightCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD0006320B1D1950007CA2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD0006520B1D1950007CA2A /* SheetWeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetWeightVC.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				9FD000C020B32F900007CA2A /* CalculateFunctions.swift */,
+				9FB7945720C7B8D8007A8519 /* CalculationError.swift */,
+				9FB7945920C7C3BF007A8519 /* AppExtensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FD000B420B2230C0007CA2A /* MaterialService.swift in Sources */,
+				9FB7945820C7B8D8007A8519 /* CalculationError.swift in Sources */,
 				9FD000C120B32F900007CA2A /* CalculateFunctions.swift in Sources */,
 				9F393B8C20C0707A00BF9AC0 /* RodWeightVC.swift in Sources */,
 				9FB7945420C7A203007A8519 /* RoundTubeWeightVC.swift in Sources */,
@@ -271,6 +278,7 @@
 				9FD0006420B1D1950007CA2A /* AppDelegate.swift in Sources */,
 				9FD000BC20B25E930007CA2A /* CustomTextField.swift in Sources */,
 				9FD000BE20B260B60007CA2A /* RadiusButton.swift in Sources */,
+				9FB7945A20C7C3BF007A8519 /* AppExtensions.swift in Sources */,
 				9FB7945620C7A224007A8519 /* SquareTubeWeightVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tow-nO-SfT" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
-                                <rect key="frame" x="8" y="649" width="359" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tow-nO-SfT" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                <rect key="frame" x="8" y="683" width="359" height="60"/>
                                 <color key="backgroundColor" red="0.57254901960000004" green="0.1529411765" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ufl-1o-BWO"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trW-i0-MTw" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
-                                <rect key="frame" x="8" y="581" width="359" height="60"/>
+                                <rect key="frame" x="8" y="615" width="359" height="60"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.1764705882" blue="0.56862745100000001" alpha="0.70717138450000006" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="dTW-Jb-lo0"/>
@@ -139,7 +139,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xd-RN-XTq">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xd-RN-XTq">
                                 <rect key="frame" x="147.33333333333334" y="290.66666666666669" width="80.666666666666657" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.2666666667" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -182,6 +182,8 @@
                             <constraint firstItem="btC-we-vk4" firstAttribute="bottom" secondItem="tow-nO-SfT" secondAttribute="bottom" constant="20" id="rNe-u9-ZHx"/>
                             <constraint firstItem="COf-H5-GIR" firstAttribute="leading" secondItem="btC-we-vk4" secondAttribute="leading" constant="8" id="t7h-7v-b8F"/>
                             <constraint firstItem="8Xd-RN-XTq" firstAttribute="centerX" secondItem="P1d-23-hYk" secondAttribute="centerX" id="uUl-eH-ckS"/>
+                            <constraint firstItem="btC-we-vk4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8Xd-RN-XTq" secondAttribute="trailing" constant="8" id="xcB-xS-H0o"/>
+                            <constraint firstItem="8Xd-RN-XTq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="btC-we-vk4" secondAttribute="leading" constant="8" id="zd5-ZF-mCQ"/>
                             <constraint firstItem="tow-nO-SfT" firstAttribute="top" secondItem="trW-i0-MTw" secondAttribute="bottom" constant="8" id="zw8-Lc-Uhp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="btC-we-vk4"/>
@@ -262,7 +264,7 @@
                                     <action selector="clearFieldsBtnPressed:" destination="4e4-G0-ReS" eventType="touchUpInside" id="gid-T3-vWl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3u-4f-iNl" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3u-4f-iNl" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                 <rect key="frame" x="8" y="683" width="359" height="60"/>
                                 <color key="backgroundColor" red="0.57254901960000004" green="0.1529411765" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -384,7 +386,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="c5H-gK-ucw"/>
                                 </constraints>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cq-qF-2Hx">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Cq-qF-2Hx">
                                 <rect key="frame" x="147.33333333333334" y="311" width="80.666666666666657" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.2666666667" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -401,17 +403,19 @@
                         <constraints>
                             <constraint firstItem="TPS-WM-Ft3" firstAttribute="leading" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="0sL-72-U44"/>
                             <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="S7n-Cc-ITS" secondAttribute="trailing" constant="8" id="3F7-wp-DOu"/>
+                            <constraint firstItem="0Cq-qF-2Hx" firstAttribute="centerX" secondItem="r5U-Un-MTZ" secondAttribute="centerX" id="5us-8F-dko"/>
                             <constraint firstItem="nOK-Pm-4ff" firstAttribute="leading" secondItem="r5U-Un-MTZ" secondAttribute="leading" id="Ab4-iz-cXt"/>
                             <constraint firstItem="S7n-Cc-ITS" firstAttribute="leading" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="GgI-4q-ClR"/>
-                            <constraint firstItem="0Cq-qF-2Hx" firstAttribute="centerX" secondItem="r5U-Un-MTZ" secondAttribute="centerX" id="NsR-TU-X0E"/>
                             <constraint firstItem="z3u-4f-iNl" firstAttribute="leading" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="PeH-5n-W85"/>
                             <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="SVe-YQ-EB7" secondAttribute="trailing" constant="8" id="Ssh-du-2kN"/>
                             <constraint firstItem="13T-2U-ek4" firstAttribute="centerX" secondItem="0Cq-qF-2Hx" secondAttribute="centerX" id="T3C-Ij-4aS"/>
                             <constraint firstItem="SVe-YQ-EB7" firstAttribute="top" secondItem="8kc-2L-P4R" secondAttribute="bottom" constant="25" id="TXd-RH-i3w"/>
                             <constraint firstItem="SVe-YQ-EB7" firstAttribute="leading" secondItem="r5U-Un-MTZ" secondAttribute="leading" constant="8" id="UER-8Q-ZCR"/>
                             <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="z3u-4f-iNl" secondAttribute="trailing" constant="8" id="XfU-VD-x0Z"/>
+                            <constraint firstItem="0Cq-qF-2Hx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="Y63-Pp-nhQ"/>
                             <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="TPS-WM-Ft3" secondAttribute="trailing" constant="8" id="a90-YL-OUc"/>
                             <constraint firstItem="13T-2U-ek4" firstAttribute="top" secondItem="r5U-Un-MTZ" secondAttribute="top" constant="356" id="caP-F1-IOR"/>
+                            <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Cq-qF-2Hx" secondAttribute="trailing" constant="8" id="cjS-RY-4LL"/>
                             <constraint firstItem="nOK-Pm-4ff" firstAttribute="top" secondItem="r5U-Un-MTZ" secondAttribute="top" id="eXJ-Ut-9gS"/>
                             <constraint firstItem="OC2-cb-BJN" firstAttribute="bottom" secondItem="z3u-4f-iNl" secondAttribute="bottom" constant="20" id="fPO-02-pkb"/>
                             <constraint firstItem="TPS-WM-Ft3" firstAttribute="top" secondItem="nOK-Pm-4ff" secondAttribute="bottom" constant="20" id="saa-c3-Ez6"/>
@@ -483,7 +487,7 @@
                                     <action selector="clearFieldsBtnPressed:" destination="ck2-Qq-IIZ" eventType="touchUpInside" id="Mkw-lK-04v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kto-Ol-xx9" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kto-Ol-xx9" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                 <rect key="frame" x="8" y="683" width="359" height="60"/>
                                 <color key="backgroundColor" red="0.57254901960000004" green="0.1529411765" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -598,7 +602,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-SU-xnW">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-SU-xnW">
                                 <rect key="frame" x="147.33333333333334" y="311.33333333333331" width="80.666666666666657" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.2666666667" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -626,6 +630,7 @@
                             <constraint firstItem="9OV-aL-weo" firstAttribute="leading" secondItem="nw3-qh-3Dn" secondAttribute="leading" id="DhF-dW-nt3"/>
                             <constraint firstItem="God-pc-QIW" firstAttribute="trailing" secondItem="CIc-Q9-vVS" secondAttribute="trailing" constant="8" id="HPq-hd-NNa"/>
                             <constraint firstItem="God-pc-QIW" firstAttribute="bottom" secondItem="kto-Ol-xx9" secondAttribute="bottom" constant="20" id="KJc-2i-kXe"/>
+                            <constraint firstItem="God-pc-QIW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h0J-SU-xnW" secondAttribute="trailing" constant="8" id="MSn-y4-Kg0"/>
                             <constraint firstItem="God-pc-QIW" firstAttribute="trailing" secondItem="kto-Ol-xx9" secondAttribute="trailing" constant="8" id="MUq-lN-JBX"/>
                             <constraint firstItem="CIc-Q9-vVS" firstAttribute="leading" secondItem="God-pc-QIW" secondAttribute="leading" constant="8" id="Mkd-1U-MOd"/>
                             <constraint firstItem="Fu1-Uj-8zu" firstAttribute="leading" secondItem="God-pc-QIW" secondAttribute="leading" constant="8" id="NVt-kb-46q"/>
@@ -634,12 +639,13 @@
                             <constraint firstItem="eQr-KF-DaQ" firstAttribute="leading" secondItem="God-pc-QIW" secondAttribute="leading" constant="8" id="bmN-KZ-5mg"/>
                             <constraint firstAttribute="trailing" secondItem="9OV-aL-weo" secondAttribute="trailing" id="fyB-cS-8Op"/>
                             <constraint firstItem="God-pc-QIW" firstAttribute="trailing" secondItem="Fu1-Uj-8zu" secondAttribute="trailing" constant="8" id="gCT-UX-9Tu"/>
+                            <constraint firstItem="h0J-SU-xnW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="God-pc-QIW" secondAttribute="leading" constant="8" id="giA-sa-zxy"/>
                             <constraint firstItem="gtH-Py-jz8" firstAttribute="centerX" secondItem="nw3-qh-3Dn" secondAttribute="centerX" id="iQC-iz-Qxx"/>
-                            <constraint firstItem="h0J-SU-xnW" firstAttribute="centerX" secondItem="nw3-qh-3Dn" secondAttribute="centerX" id="j2v-Py-96e"/>
                             <constraint firstItem="kto-Ol-xx9" firstAttribute="leading" secondItem="God-pc-QIW" secondAttribute="leading" constant="8" id="mzS-o3-fyh"/>
                             <constraint firstItem="gtH-Py-jz8" firstAttribute="top" secondItem="Fu1-Uj-8zu" secondAttribute="bottom" constant="50" id="sBr-Ml-kqX"/>
                             <constraint firstItem="God-pc-QIW" firstAttribute="trailing" secondItem="eQr-KF-DaQ" secondAttribute="trailing" constant="8" id="sN5-6H-bCg"/>
                             <constraint firstItem="h0J-SU-xnW" firstAttribute="top" secondItem="gtH-Py-jz8" secondAttribute="bottom" constant="40" id="vzd-Pj-tQI"/>
+                            <constraint firstItem="h0J-SU-xnW" firstAttribute="centerX" secondItem="nw3-qh-3Dn" secondAttribute="centerX" id="xNV-aP-BHj"/>
                             <constraint firstItem="rOW-3D-uCm" firstAttribute="top" secondItem="h0J-SU-xnW" secondAttribute="bottom" constant="2" id="xz8-m9-fZM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="God-pc-QIW"/>
@@ -788,7 +794,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b69-8A-4XC" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b69-8A-4XC" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                         <rect key="frame" x="8" y="683" width="359" height="60"/>
                                         <color key="backgroundColor" red="0.5725490196078431" green="0.15294117647058825" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -817,7 +823,7 @@
                                             <action selector="clearFieldsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAS-5W-Goa"/>
                                         </connections>
                                     </button>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVb-Dt-fh7">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVb-Dt-fh7">
                                         <rect key="frame" x="147.33333333333334" y="290.66666666666669" width="80.666666666666657" height="43"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                         <color key="textColor" red="0.64313725489999995" green="0.2666666667" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -851,12 +857,12 @@
                                     <constraint firstItem="AKO-yU-qCW" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" id="Gmq-kj-y4j"/>
                                     <constraint firstItem="FTp-9k-0fz" firstAttribute="top" secondItem="F4Y-Iv-fFX" secondAttribute="bottom" constant="50" id="KYG-TF-8mv"/>
                                     <constraint firstItem="iZo-Qw-hr3" firstAttribute="centerX" secondItem="bpx-Ma-2CW" secondAttribute="centerX" id="Ois-3n-OfM"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WVb-Dt-fh7" secondAttribute="trailing" id="PTG-5V-YLb"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WVb-Dt-fh7" secondAttribute="trailing" constant="8" id="PTG-5V-YLb"/>
                                     <constraint firstItem="b69-8A-4XC" firstAttribute="top" secondItem="AP9-Up-vDD" secondAttribute="bottom" constant="8" id="Vv9-83-cAl"/>
                                     <constraint firstItem="t0e-AX-dde" firstAttribute="top" secondItem="FTp-9k-0fz" secondAttribute="bottom" constant="25" id="WdY-rB-dJ4"/>
                                     <constraint firstItem="AP9-Up-vDD" firstAttribute="width" secondItem="b69-8A-4XC" secondAttribute="width" id="X3g-AR-sbZ"/>
                                     <constraint firstItem="b69-8A-4XC" firstAttribute="leading" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="esB-CL-Vqp"/>
-                                    <constraint firstItem="WVb-Dt-fh7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bpx-Ma-2CW" secondAttribute="leading" id="gr8-Ic-Xvv"/>
+                                    <constraint firstItem="WVb-Dt-fh7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bpx-Ma-2CW" secondAttribute="leading" constant="8" id="gr8-Ic-Xvv"/>
                                     <constraint firstItem="WVb-Dt-fh7" firstAttribute="top" secondItem="FTp-9k-0fz" secondAttribute="bottom" constant="40" id="kR1-WG-skZ"/>
                                     <constraint firstItem="F4Y-Iv-fFX" firstAttribute="top" secondItem="AKO-yU-qCW" secondAttribute="bottom" constant="20" id="nte-Nm-PHP"/>
                                     <constraint firstAttribute="trailing" secondItem="t0e-AX-dde" secondAttribute="trailing" constant="8" id="rmZ-Qf-vT9"/>

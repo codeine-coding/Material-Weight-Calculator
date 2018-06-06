@@ -66,19 +66,27 @@ class RodWeightVC: UIViewController {
     
     
     @IBAction func calculateBtnPressed(_ sender: Any) {
-        if (diameterTxt.text  == "") && (lengthTxt.text == "") && selectedMaterialFactor != nil {
-            weightLabel.text = "no weights supplied"
+        rodImage.isHidden = true
+        weightLabel.isHidden = false
+        if selectedMaterialFactor == nil {
+            weightLabel.text = "Please select material"
         } else {
-            let calculatedValue = calculateRoundRod(factor: selectedMaterialFactor!,
+            do {
+            let calculatedValue = try calculateRoundRod(factor: selectedMaterialFactor!,
                                                     diameter: diameterTxt.text!,
                                                     length: lengthTxt.text!)
-            weightLabel.text = String(calculatedValue)
-        }
-        rodImage.isHidden = true
-        poundsLabel.isHidden = false
-        weightLabel.isHidden = false
-        clearFieldsBtn.isHidden = false
-        clearFieldsBtn.isEnabled = true
+                weightLabel.text = String(calculatedValue)
+                poundsLabel.isHidden = false
+                clearFieldsBtn.isHidden = false
+                clearFieldsBtn.isEnabled = true
+            } catch CalculationError.invalidInput {
+                weightLabel.text = "Invalid Field Inputs"
+            } catch CalculationError.zeroValue {
+                weightLabel.text = "No field can be zero"
+            } catch {
+                weightLabel.text = "Unexpected Error"
+            }
+        } 
         
     }
     @IBAction func clearFieldsBtnPressed(_ sender: Any) {
@@ -87,7 +95,6 @@ class RodWeightVC: UIViewController {
         lengthTxt.text = ""
         weightLabel.isHidden = true
         poundsLabel.isHidden = true
-        calculateBtn.isEnabled = false
         clearFieldsBtn.isHidden = true
         rodImage.isHidden = false
     }
@@ -108,7 +115,6 @@ extension RodWeightVC: UIPickerViewDataSource, UIPickerViewDelegate {
         selectedMaterial = MaterialService.instance.getMaterials()[row].title
         selectedMaterialFactor = MaterialService.instance.getMaterials()[row].factor
          rodMaterialSelect.text = selectedMaterial
-         calculateBtn.isEnabled = true
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {

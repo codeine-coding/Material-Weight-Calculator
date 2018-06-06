@@ -20,7 +20,7 @@ class SheetWeightVC: UIViewController {
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var poundsLabel: UILabel!
     @IBOutlet weak var calculateBtn: UIButton!
-    @IBOutlet weak var clearFieldsBtn: RadiusButton!
+    @IBOutlet weak var clearFieldsBtn: UIButton!
     @IBOutlet weak var sheetIImage: UIImageView!
     
     override func viewDidLoad() {
@@ -64,20 +64,29 @@ class SheetWeightVC: UIViewController {
     
     
     @IBAction func calculateBtnPressed(_ sender: Any) {
-        if (thicknessTxt.text  == "") && (widthTxt.text == "") && (lengthTxt.text == "") && selectedMaterialFactor != nil {
-            weightLabel.text = "no weights supplied"
-        } else {
-            let calculatedValue = calculateSheet(factor: selectedMaterialFactor!,
-                                                 thickness: thicknessTxt.text!,
-                                                 width: widthTxt.text!,
-                                                 length: lengthTxt.text!)
-            weightLabel.text = String(calculatedValue)
-        }
         sheetIImage.isHidden = true
-        poundsLabel.isHidden = false
         weightLabel.isHidden = false
-        clearFieldsBtn.isHidden = false
-        clearFieldsBtn.isEnabled = true
+        if selectedMaterialFactor == nil {
+            weightLabel.text = "Please select material"
+        } else {
+            do {
+                let calculatedValue = try calculateSheet(factor: selectedMaterialFactor!,
+                                                         thickness: thicknessTxt.text!,
+                                                         width: widthTxt.text!,
+                                                         length: lengthTxt.text!)
+                weightLabel.text = String(calculatedValue)
+                poundsLabel.isHidden = false
+                clearFieldsBtn.isHidden = false
+                clearFieldsBtn.isEnabled = true
+                
+            } catch CalculationError.invalidInput {
+                weightLabel.text = "Invalid Field Inputs"
+            } catch CalculationError.zeroValue {
+                weightLabel.text = "No field can be zero"
+            } catch {
+                weightLabel.text = "Unexpected Error"
+            }
+        }
         
     }
     @IBAction func clearFieldsBtnPressed(_ sender: Any) {
@@ -87,7 +96,6 @@ class SheetWeightVC: UIViewController {
         lengthTxt.text = ""
         weightLabel.isHidden = true
         poundsLabel.isHidden = true
-        calculateBtn.isEnabled = false
         clearFieldsBtn.isHidden = true
         sheetIImage.isHidden = false
     }
@@ -106,7 +114,6 @@ extension SheetWeightVC: UIPickerViewDataSource, UIPickerViewDelegate {
         selectedMaterial = MaterialService.instance.getMaterials()[row].title
         selectedMaterialFactor = MaterialService.instance.getMaterials()[row].factor
         materialTextField.text = selectedMaterial
-        calculateBtn.isEnabled = true
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {

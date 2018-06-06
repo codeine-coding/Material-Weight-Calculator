@@ -68,20 +68,30 @@ class RoundTubeWeightVC: UIViewController {
     
     
     @IBAction func calculateBtnPressed(_ sender: Any) {
-        if (outterDiameterTxt.text  == "") && (wallTxt.text == "") && (lengthTxt.text == "") && selectedMaterialFactor != nil {
-            weightLabel.text = "no weights supplied"
-        } else {
-            let calculatedValue = calculateRoundTube(factor: selectedMaterialFactor!,
-                                                     outsideDiameter: outterDiameterTxt.text!,
-                                                     wall: wallTxt.text!,
-                                                     length: lengthTxt.text!)
-            weightLabel.text = String(calculatedValue)
-        }
         roundTubeImage.isHidden = true
-        poundsLabel.isHidden = false
         weightLabel.isHidden = false
-        clearFieldsBtn.isHidden = false
-        clearFieldsBtn.isEnabled = true
+        if selectedMaterialFactor == nil {
+            weightLabel.text = "Please select material"
+        } else {
+            do {
+                let calculatedValue = try calculateRoundTube(factor: selectedMaterialFactor!,
+                                                              outsideDiameter: outterDiameterTxt.text!,
+                                                              wall: wallTxt.text!,
+                                                              length: lengthTxt.text!)
+                weightLabel.text = String(calculatedValue)
+                poundsLabel.isHidden = false
+                clearFieldsBtn.isHidden = false
+                clearFieldsBtn.isEnabled = true
+            } catch CalculationError.invalidInput {
+                weightLabel.text = "Invalid Field Inputs"
+            } catch CalculationError.zeroValue {
+                weightLabel.text = "No field can be zero"
+            } catch CalculationError.wallGreaterThanOutterField(let outterField) {
+                weightLabel.text = "Wall cannot be greater than \(outterField)"
+            } catch {
+                weightLabel.text = "Unexpected Error"
+            }
+        }
         
     }
     @IBAction func clearFieldsBtnPressed(_ sender: Any) {
@@ -91,7 +101,6 @@ class RoundTubeWeightVC: UIViewController {
         lengthTxt.text = ""
         weightLabel.isHidden = true
         poundsLabel.isHidden = true
-        calculateBtn.isEnabled = false
         clearFieldsBtn.isHidden = true
         roundTubeImage.isHidden = false
     }
@@ -111,7 +120,6 @@ extension RoundTubeWeightVC: UIPickerViewDataSource, UIPickerViewDelegate {
         selectedMaterial = MaterialService.instance.getMaterials()[row].title
         selectedMaterialFactor = MaterialService.instance.getMaterials()[row].factor
         materialTextField.text = selectedMaterial
-        calculateBtn.isEnabled = true
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
