@@ -9,7 +9,8 @@
 import Foundation
 
 enum CalculationError: Error {
+    case missingFactorValue
     case zeroValue
     case invalidInput
-    case wallGreaterThanOutterField
+    case wallGreaterThanOutterField(outterField: String)
 }
