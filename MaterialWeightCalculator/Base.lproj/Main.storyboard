@@ -234,10 +234,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOK-Pm-4ff">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="69.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round Tube" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xR-oF-ic2">
-                                        <rect key="frame" x="139" y="41" width="97.333333333333314" height="20"/>
+                                        <rect key="frame" x="139" y="41" width="97.333333333333314" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -278,47 +278,47 @@
                                     <action selector="calculateBtnPressed:" destination="4e4-G0-ReS" eventType="touchUpInside" id="oJl-9E-zZU"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TPS-WM-Ft3">
-                                <rect key="frame" x="8" y="89" width="359" height="29"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dmF-sv-jId" userLabel="Material Select">
+                                <rect key="frame" x="8" y="89.333333333333329" width="359" height="29"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Material" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAB-VN-ll7">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Material" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHE-hg-Eni">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="27"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unm-rG-umN">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-CU-Zu3">
                                         <rect key="frame" x="0.0" y="27" width="359" height="2"/>
                                         <color key="backgroundColor" red="0.64313725489999995" green="0.2666666667" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="JYh-BN-Bbq"/>
+                                            <constraint firstAttribute="height" constant="2" id="wg6-HQ-RXO"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="unm-rG-umN" firstAttribute="width" secondItem="RAB-VN-ll7" secondAttribute="width" id="yUp-Lw-vDH"/>
+                                    <constraint firstItem="KGo-CU-Zu3" firstAttribute="width" secondItem="OHE-hg-Eni" secondAttribute="width" id="Nxn-id-QRg"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="8kc-2L-P4R">
-                                <rect key="frame" x="33.666666666666657" y="168" width="308" height="103"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="3jU-ng-adh" userLabel="Dimensions Stack">
+                                <rect key="frame" x="33.666666666666657" y="168.33333333333334" width="308" height="103.00000000000003"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3CH-Nm-KUx">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WOh-JV-b8a">
                                         <rect key="frame" x="0.0" y="0.0" width="98" height="103"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outter Diameter" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="98" translatesAutoresizingMaskIntoConstraints="NO" id="Oyp-34-5lp">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outter Diameter" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="98" translatesAutoresizingMaskIntoConstraints="NO" id="1Mc-1h-3uZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="98" height="41"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="41" id="jdm-MS-tFy"/>
+                                                    <constraint firstAttribute="height" constant="41" id="Rka-fw-4q1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Owg-Cf-s34" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxd-xU-GYW" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="43" width="98" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="B7V-Vz-yoH"/>
-                                                    <constraint firstAttribute="height" constant="60" id="bLr-PM-qbL"/>
+                                                    <constraint firstAttribute="height" constant="60" id="RqW-nQ-U8l"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="a7g-tL-l8T"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -326,23 +326,23 @@
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Oyp-34-5lp" firstAttribute="centerX" secondItem="Owg-Cf-s34" secondAttribute="centerX" id="Lvd-Dz-CjS"/>
+                                            <constraint firstItem="1Mc-1h-3uZ" firstAttribute="centerX" secondItem="yxd-xU-GYW" secondAttribute="centerX" id="RZm-4I-r3t"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Kta-w7-TXi">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="kQf-mf-aZS">
                                         <rect key="frame" x="105" y="0.0" width="98" height="103"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhQ-lx-xYM">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtD-HH-bYx">
                                                 <rect key="frame" x="0.0" y="0.0" width="98" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6i-mo-LqD" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-Ax-Dc3" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="43" width="98" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="B4S-ca-2We"/>
-                                                    <constraint firstAttribute="height" constant="60" id="vNM-Cp-ZI4"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="I9C-aP-CPd"/>
+                                                    <constraint firstAttribute="height" constant="60" id="OwW-g0-AUk"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -350,23 +350,23 @@
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="zhQ-lx-xYM" firstAttribute="centerX" secondItem="p6i-mo-LqD" secondAttribute="centerX" id="yZo-OZ-Qpc"/>
+                                            <constraint firstItem="mtD-HH-bYx" firstAttribute="centerX" secondItem="q1n-Ax-Dc3" secondAttribute="centerX" id="a5h-ns-UAN"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="7Kk-QU-tah">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="6Kg-VY-OwF">
                                         <rect key="frame" x="210" y="0.0" width="98" height="103"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKz-Mq-TEX">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyY-EI-R1d">
                                                 <rect key="frame" x="0.0" y="0.0" width="98" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ce3-MJ-1Ig" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnJ-hZ-hET" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="43" width="98" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="5iR-ut-UDK"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="FZX-Nv-oyJ"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="QbO-Hj-CCE"/>
+                                                    <constraint firstAttribute="height" constant="60" id="REc-vq-AZX"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -374,57 +374,55 @@
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="BKz-Mq-TEX" firstAttribute="centerX" secondItem="Ce3-MJ-1Ig" secondAttribute="centerX" id="VNF-0P-yZs"/>
+                                            <constraint firstItem="xyY-EI-R1d" firstAttribute="centerX" secondItem="gnJ-hZ-hET" secondAttribute="centerX" id="skF-Mr-7QC"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2000px-Cylinder.svg" translatesAutoresizingMaskIntoConstraints="NO" id="SVe-YQ-EB7">
-                                <rect key="frame" x="8" y="296" width="359" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="6sl-1c-VHg"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="c5H-gK-ucw"/>
-                                </constraints>
-                            </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Cq-qF-2Hx">
-                                <rect key="frame" x="147.33333333333334" y="311" width="80.666666666666657" height="43"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOe-GA-uai">
+                                <rect key="frame" x="147.33333333333334" y="311.33333333333331" width="80.666666666666657" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.2666666667" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13T-2U-ek4">
-                                <rect key="frame" x="152" y="356" width="71" height="24"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3M4-DQ-RQn">
+                                <rect key="frame" x="152" y="356.33333333333331" width="71" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2000px-Cylinder.svg" translatesAutoresizingMaskIntoConstraints="NO" id="eWh-AE-YCv">
+                                <rect key="frame" x="8" y="296.33333333333331" width="359" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="zJu-W0-EdA"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TPS-WM-Ft3" firstAttribute="leading" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="0sL-72-U44"/>
                             <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="S7n-Cc-ITS" secondAttribute="trailing" constant="8" id="3F7-wp-DOu"/>
-                            <constraint firstItem="0Cq-qF-2Hx" firstAttribute="centerX" secondItem="r5U-Un-MTZ" secondAttribute="centerX" id="5us-8F-dko"/>
+                            <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="eWh-AE-YCv" secondAttribute="trailing" constant="8" id="3M9-ad-WRm"/>
+                            <constraint firstItem="dmF-sv-jId" firstAttribute="top" secondItem="nOK-Pm-4ff" secondAttribute="bottom" constant="20" id="6ja-Z8-8ea"/>
                             <constraint firstItem="nOK-Pm-4ff" firstAttribute="leading" secondItem="r5U-Un-MTZ" secondAttribute="leading" id="Ab4-iz-cXt"/>
+                            <constraint firstItem="3M4-DQ-RQn" firstAttribute="top" secondItem="AOe-GA-uai" secondAttribute="bottom" constant="2" id="AyL-ad-j7r"/>
                             <constraint firstItem="S7n-Cc-ITS" firstAttribute="leading" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="GgI-4q-ClR"/>
+                            <constraint firstItem="AOe-GA-uai" firstAttribute="top" secondItem="3jU-ng-adh" secondAttribute="bottom" constant="40" id="Mrf-8r-8OF"/>
+                            <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AOe-GA-uai" secondAttribute="trailing" constant="8" id="N0G-fi-Udt"/>
+                            <constraint firstItem="eWh-AE-YCv" firstAttribute="top" secondItem="3jU-ng-adh" secondAttribute="bottom" constant="25" id="NV7-Oj-qEN"/>
+                            <constraint firstItem="3jU-ng-adh" firstAttribute="top" secondItem="dmF-sv-jId" secondAttribute="bottom" constant="50" id="Nwp-2W-Ilp"/>
                             <constraint firstItem="z3u-4f-iNl" firstAttribute="leading" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="PeH-5n-W85"/>
-                            <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="SVe-YQ-EB7" secondAttribute="trailing" constant="8" id="Ssh-du-2kN"/>
-                            <constraint firstItem="13T-2U-ek4" firstAttribute="centerX" secondItem="0Cq-qF-2Hx" secondAttribute="centerX" id="T3C-Ij-4aS"/>
-                            <constraint firstItem="SVe-YQ-EB7" firstAttribute="top" secondItem="8kc-2L-P4R" secondAttribute="bottom" constant="25" id="TXd-RH-i3w"/>
-                            <constraint firstItem="SVe-YQ-EB7" firstAttribute="leading" secondItem="r5U-Un-MTZ" secondAttribute="leading" constant="8" id="UER-8Q-ZCR"/>
+                            <constraint firstItem="3jU-ng-adh" firstAttribute="centerX" secondItem="r5U-Un-MTZ" secondAttribute="centerX" id="WNS-z9-rEQ"/>
                             <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="z3u-4f-iNl" secondAttribute="trailing" constant="8" id="XfU-VD-x0Z"/>
-                            <constraint firstItem="0Cq-qF-2Hx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="Y63-Pp-nhQ"/>
-                            <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="TPS-WM-Ft3" secondAttribute="trailing" constant="8" id="a90-YL-OUc"/>
-                            <constraint firstItem="13T-2U-ek4" firstAttribute="top" secondItem="r5U-Un-MTZ" secondAttribute="top" constant="356" id="caP-F1-IOR"/>
-                            <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Cq-qF-2Hx" secondAttribute="trailing" constant="8" id="cjS-RY-4LL"/>
+                            <constraint firstItem="dmF-sv-jId" firstAttribute="leading" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="aqx-tn-iph"/>
+                            <constraint firstItem="AOe-GA-uai" firstAttribute="centerX" secondItem="r5U-Un-MTZ" secondAttribute="centerX" id="dRV-bL-2N2"/>
                             <constraint firstItem="nOK-Pm-4ff" firstAttribute="top" secondItem="r5U-Un-MTZ" secondAttribute="top" id="eXJ-Ut-9gS"/>
                             <constraint firstItem="OC2-cb-BJN" firstAttribute="bottom" secondItem="z3u-4f-iNl" secondAttribute="bottom" constant="20" id="fPO-02-pkb"/>
-                            <constraint firstItem="TPS-WM-Ft3" firstAttribute="top" secondItem="nOK-Pm-4ff" secondAttribute="bottom" constant="20" id="saa-c3-Ez6"/>
-                            <constraint firstItem="8kc-2L-P4R" firstAttribute="top" secondItem="TPS-WM-Ft3" secondAttribute="bottom" constant="50" id="uHW-ty-NQT"/>
-                            <constraint firstItem="0Cq-qF-2Hx" firstAttribute="top" secondItem="8kc-2L-P4R" secondAttribute="bottom" constant="40" id="vjl-cX-7Qr"/>
+                            <constraint firstItem="eWh-AE-YCv" firstAttribute="leading" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="jJ3-cT-Xjq"/>
+                            <constraint firstItem="OC2-cb-BJN" firstAttribute="trailing" secondItem="dmF-sv-jId" secondAttribute="trailing" constant="8" id="rQF-hZ-B6V"/>
+                            <constraint firstItem="AOe-GA-uai" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OC2-cb-BJN" secondAttribute="leading" constant="8" id="tgn-rT-2Mw"/>
                             <constraint firstItem="z3u-4f-iNl" firstAttribute="top" secondItem="S7n-Cc-ITS" secondAttribute="bottom" constant="8" id="xIt-p4-vbK"/>
                             <constraint firstAttribute="trailing" secondItem="nOK-Pm-4ff" secondAttribute="trailing" id="xLs-Lu-vvr"/>
-                            <constraint firstItem="13T-2U-ek4" firstAttribute="top" secondItem="0Cq-qF-2Hx" secondAttribute="bottom" constant="2" id="xNG-GK-oX5"/>
-                            <constraint firstItem="8kc-2L-P4R" firstAttribute="centerX" secondItem="r5U-Un-MTZ" secondAttribute="centerX" id="xUb-Kc-ACT"/>
+                            <constraint firstItem="3M4-DQ-RQn" firstAttribute="centerX" secondItem="AOe-GA-uai" secondAttribute="centerX" id="xcq-EU-lLq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OC2-cb-BJN"/>
                     </view>
@@ -433,13 +431,13 @@
                         <outlet property="bgView" destination="r5U-Un-MTZ" id="iWz-FH-ufH"/>
                         <outlet property="calculateBtn" destination="z3u-4f-iNl" id="1sd-mu-Idc"/>
                         <outlet property="clearFieldsBtn" destination="S7n-Cc-ITS" id="W2C-ox-hXs"/>
-                        <outlet property="lengthTxt" destination="Ce3-MJ-1Ig" id="5xm-P3-zeM"/>
-                        <outlet property="materialTextField" destination="RAB-VN-ll7" id="SiG-x2-KgG"/>
-                        <outlet property="outterDiameterTxt" destination="Owg-Cf-s34" id="aVY-4S-kZE"/>
-                        <outlet property="poundsLabel" destination="13T-2U-ek4" id="Qjy-kg-P8j"/>
-                        <outlet property="roundTubeImage" destination="SVe-YQ-EB7" id="cVW-nq-ciM"/>
-                        <outlet property="wallTxt" destination="p6i-mo-LqD" id="TLn-Zy-S0W"/>
-                        <outlet property="weightLabel" destination="0Cq-qF-2Hx" id="10d-dl-lDq"/>
+                        <outlet property="lengthTxt" destination="gnJ-hZ-hET" id="qQh-BC-ah6"/>
+                        <outlet property="materialTextField" destination="OHE-hg-Eni" id="E83-A7-PB1"/>
+                        <outlet property="outterDiameterTxt" destination="yxd-xU-GYW" id="ZMJ-OB-eSc"/>
+                        <outlet property="poundsLabel" destination="3M4-DQ-RQn" id="oT2-et-8qj"/>
+                        <outlet property="roundTubeImage" destination="eWh-AE-YCv" id="O4D-1w-QCe"/>
+                        <outlet property="wallTxt" destination="q1n-Ax-Dc3" id="D3N-qm-0hs"/>
+                        <outlet property="weightLabel" destination="AOe-GA-uai" id="bCo-HG-RNT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kP9-h9-laA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -454,7 +452,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OV-aL-weo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OV-aL-weo" userLabel="Header">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="69.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square Tube" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtp-0u-KM7">
@@ -473,35 +471,7 @@
                                     <constraint firstAttribute="bottom" secondItem="rtp-0u-KM7" secondAttribute="bottom" constant="8" id="sIs-ub-k4h"/>
                                 </constraints>
                             </view>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQr-KF-DaQ" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
-                                <rect key="frame" x="8" y="615" width="359" height="60"/>
-                                <color key="backgroundColor" red="0.40000000000000002" green="0.1764705882" blue="0.56862745100000001" alpha="0.70717138450000006" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="00n-PQ-w8l"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <state key="normal" title="Clear Fields">
-                                    <color key="titleColor" red="0.99586588139999999" green="1" blue="0.99992710350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="clearFieldsBtnPressed:" destination="ck2-Qq-IIZ" eventType="touchUpInside" id="Mkw-lK-04v"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kto-Ol-xx9" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
-                                <rect key="frame" x="8" y="683" width="359" height="60"/>
-                                <color key="backgroundColor" red="0.57254901960000004" green="0.1529411765" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="vLS-CH-S4n"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <state key="normal" title="Calculate">
-                                    <color key="titleColor" red="0.99586588139999999" green="1" blue="0.99992710350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="calculateBtnPressed:" destination="ck2-Qq-IIZ" eventType="touchUpInside" id="uvb-XF-np8"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fu1-Uj-8zu">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fu1-Uj-8zu" userLabel="Material Select">
                                 <rect key="frame" x="8" y="89.333333333333329" width="359" height="29"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Material" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xai-ns-rJs">
@@ -522,7 +492,7 @@
                                     <constraint firstItem="F85-pm-41d" firstAttribute="width" secondItem="Xai-ns-rJs" secondAttribute="width" id="xRP-M1-5EY"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-Py-jz8">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-Py-jz8" userLabel="Dimensions Stack">
                                 <rect key="frame" x="33.666666666666657" y="168.33333333333334" width="308" height="103.00000000000003"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="NWE-iv-Hvp">
@@ -617,10 +587,37 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box" translatesAutoresizingMaskIntoConstraints="NO" id="CIc-Q9-vVS">
                                 <rect key="frame" x="8" y="296.33333333333331" width="359" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="0ez-zS-b01"/>
                                     <constraint firstAttribute="height" constant="160" id="hlG-Ac-5py"/>
                                 </constraints>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQr-KF-DaQ" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                <rect key="frame" x="8" y="615" width="359" height="60"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.1764705882" blue="0.56862745100000001" alpha="0.70717138450000006" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="00n-PQ-w8l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Clear Fields">
+                                    <color key="titleColor" red="0.99586588139999999" green="1" blue="0.99992710350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearFieldsBtnPressed:" destination="ck2-Qq-IIZ" eventType="touchUpInside" id="Mkw-lK-04v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kto-Ol-xx9" customClass="RadiusButton" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                <rect key="frame" x="8" y="683" width="359" height="60"/>
+                                <color key="backgroundColor" red="0.57254901960000004" green="0.1529411765" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="vLS-CH-S4n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.99586588139999999" green="1" blue="0.99992710350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBtnPressed:" destination="ck2-Qq-IIZ" eventType="touchUpInside" id="uvb-XF-np8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>

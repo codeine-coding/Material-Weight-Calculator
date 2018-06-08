@@ -23,6 +23,7 @@
 		9FD000BC20B25E930007CA2A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000BB20B25E930007CA2A /* CustomTextField.swift */; };
 		9FD000BE20B260B60007CA2A /* RadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000BD20B260B60007CA2A /* RadiusButton.swift */; };
 		9FD000C120B32F900007CA2A /* CalculateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000C020B32F900007CA2A /* CalculateFunctions.swift */; };
+		9FD0EE2D20C9A0CC001AA937 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0EE2C20C9A0CB001AA937 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		9FD000BB20B25E930007CA2A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		9FD000BD20B260B60007CA2A /* RadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusButton.swift; sourceTree = "<group>"; };
 		9FD000C020B32F900007CA2A /* CalculateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateFunctions.swift; sourceTree = "<group>"; };
+		9FD0EE2C20C9A0CB001AA937 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				9FD000C020B32F900007CA2A /* CalculateFunctions.swift */,
 				9FB7945720C7B8D8007A8519 /* CalculationError.swift */,
 				9FB7945920C7C3BF007A8519 /* AppExtensions.swift */,
+				9FD0EE2C20C9A0CB001AA937 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				9FB7945420C7A203007A8519 /* RoundTubeWeightVC.swift in Sources */,
 				9FD0006620B1D1950007CA2A /* SheetWeightVC.swift in Sources */,
 				9FD000B120B222320007CA2A /* Material.swift in Sources */,
+				9FD0EE2D20C9A0CC001AA937 /* Constants.swift in Sources */,
 				9FD0006420B1D1950007CA2A /* AppDelegate.swift in Sources */,
 				9FD000BC20B25E930007CA2A /* CustomTextField.swift in Sources */,
 				9FD000BE20B260B60007CA2A /* RadiusButton.swift in Sources */,

@@ -69,9 +69,10 @@ class RodWeightVC: UIViewController {
         rodImage.isHidden = true
         weightLabel.isHidden = false
         if selectedMaterialFactor == nil {
-            weightLabel.text = "Please select material"
+            errorLabel(for: weightLabel, hiddenLabel: poundsLabel, errorMessge: ErrorMessage.noMaterialSelectedErrorMessage)
         } else {
             do {
+                weightLabel.textColor = #colorLiteral(red: 0.7092668414, green: 0.3661284447, blue: 0.6820954084, alpha: 1)
             let calculatedValue = try calculateRoundRod(factor: selectedMaterialFactor!,
                                                     diameter: diameterTxt.text!,
                                                     length: lengthTxt.text!)
@@ -80,11 +81,11 @@ class RodWeightVC: UIViewController {
                 clearFieldsBtn.isHidden = false
                 clearFieldsBtn.isEnabled = true
             } catch CalculationError.invalidInput {
-                weightLabel.text = "Invalid Field Inputs"
+                errorLabel(for: weightLabel, hiddenLabel: poundsLabel, errorMessge: ErrorMessage.invalidInputErrorMessage)
             } catch CalculationError.zeroValue {
-                weightLabel.text = "No field can be zero"
+                errorLabel(for: weightLabel, hiddenLabel: poundsLabel, errorMessge: ErrorMessage.zeroValueErrorMessage)
             } catch {
-                weightLabel.text = "Unexpected Error"
+                errorLabel(for: weightLabel, hiddenLabel: poundsLabel, errorMessge: ErrorMessage.unexpectedErrorMessage)
             }
         } 
         
