@@ -64,6 +64,8 @@ class SheetWeightVC: UIViewController {
     
     
     @IBAction func calculateBtnPressed(_ sender: Any) {
+        clearFieldsBtn.isHidden = false
+        clearFieldsBtn.isEnabled = true
         sheetIImage.isHidden = true
         weightLabel.isHidden = false
         if selectedMaterialFactor == nil {
@@ -77,8 +79,6 @@ class SheetWeightVC: UIViewController {
                                                          length: lengthTxt.text!)
                 weightLabel.text = String(calculatedValue)
                 poundsLabel.isHidden = false
-                clearFieldsBtn.isHidden = false
-                clearFieldsBtn.isEnabled = true
                 
             } catch CalculationError.invalidInput {
                 errorLabel(for: weightLabel, hiddenLabel: poundsLabel, errorMessge: ErrorMessage.invalidInputErrorMessage)

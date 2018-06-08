@@ -68,6 +68,8 @@ class RoundTubeWeightVC: UIViewController {
     
     
     @IBAction func calculateBtnPressed(_ sender: Any) {
+        clearFieldsBtn.isHidden = false
+        clearFieldsBtn.isEnabled = true
         roundTubeImage.isHidden = true
         weightLabel.isHidden = false
         if selectedMaterialFactor == nil {
@@ -81,8 +83,6 @@ class RoundTubeWeightVC: UIViewController {
                                                               length: lengthTxt.text!)
                 weightLabel.text = String(calculatedValue)
                 poundsLabel.isHidden = false
-                clearFieldsBtn.isHidden = false
-                clearFieldsBtn.isEnabled = true
             } catch CalculationError.invalidInput {
                 errorLabel(for: weightLabel, hiddenLabel: poundsLabel, errorMessge: ErrorMessage.invalidInputErrorMessage)
             } catch CalculationError.zeroValue {
