@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "sheet.png",
+      "filename" : "rod.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "sheet@2x.png",
+      "filename" : "rod@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "sheet@3x.png",
+      "filename" : "rod@3x.png",
       "scale" : "3x"
     }
   ],

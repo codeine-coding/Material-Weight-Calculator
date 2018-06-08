@@ -188,7 +188,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="btC-we-vk4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Round Rod" id="YR3-Eo-Q3m"/>
+                    <tabBarItem key="tabBarItem" title="Round Rod" image="rod" id="YR3-Eo-Q3m"/>
                     <connections>
                         <outlet property="bgView" destination="P1d-23-hYk" id="twT-C9-mpw"/>
                         <outlet property="calculateBtn" destination="tow-nO-SfT" id="6Rw-OD-fuH"/>
@@ -426,7 +426,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OC2-cb-BJN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Round Tube" id="PY0-PA-iMA"/>
+                    <tabBarItem key="tabBarItem" title="Round Tube" image="roundTube" id="PY0-PA-iMA"/>
                     <connections>
                         <outlet property="bgView" destination="r5U-Un-MTZ" id="iWz-FH-ufH"/>
                         <outlet property="calculateBtn" destination="z3u-4f-iNl" id="1sd-mu-Idc"/>
@@ -647,7 +647,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="God-pc-QIW"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Square Tube" id="xNj-rN-j4d"/>
+                    <tabBarItem key="tabBarItem" title="Square Tube" image="squareTube" id="xNj-rN-j4d"/>
                     <connections>
                         <outlet property="bgView" destination="nw3-qh-3Dn" id="ews-tu-ytr"/>
                         <outlet property="calculateBtn" destination="kto-Ol-xx9" id="S4B-oc-d83"/>
@@ -665,7 +665,7 @@
             </objects>
             <point key="canvasLocation" x="1" y="1374"/>
         </scene>
-        <!--Sheet-->
+        <!--Sheet/Bar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SheetWeightVC" customModule="MaterialWeightCalculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -876,7 +876,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sheet" id="DMF-7W-Wz5"/>
+                    <tabBarItem key="tabBarItem" title="Sheet/Bar" image="sheet" selectedImage="sheet" id="DMF-7W-Wz5"/>
                     <connections>
                         <outlet property="bgView" destination="bpx-Ma-2CW" id="eoP-4C-lpp"/>
                         <outlet property="calculateBtn" destination="b69-8A-4XC" id="SQ9-wB-isj"/>
@@ -898,5 +898,9 @@
     <resources>
         <image name="2000px-Cylinder.svg" width="1020" height="666"/>
         <image name="box" width="97" height="64"/>
+        <image name="rod" width="25" height="25"/>
+        <image name="roundTube" width="25" height="25"/>
+        <image name="sheet" width="25" height="25"/>
+        <image name="squareTube" width="25" height="25"/>
     </resources>
 </document>
