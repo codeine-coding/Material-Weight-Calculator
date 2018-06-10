@@ -30,6 +30,8 @@ class CustomTextField: UITextField {
         self.layer.cornerRadius = cornerRadius
         self.layer.borderColor = #colorLiteral(red: 0.5725490196, green: 0.1529411765, blue: 0.5607843137, alpha: 1)
         self.layer.borderWidth = CGFloat(2.0)
+        // text field clears on edit
+        self.clearsOnBeginEditing = true
     }
     
 
