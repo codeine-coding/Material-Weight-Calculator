@@ -22,7 +22,7 @@ class RodWeightVC: UIViewController {
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var poundsLabel: UILabel!
     @IBOutlet weak var calculateBtn: UIButton!
-    @IBOutlet weak var clearFieldsBtn: RadiusButton!
+    @IBOutlet weak var clearFieldsBtn: UIButton!
     @IBOutlet weak var rodImage: UIImageView!
     
     override func viewDidLoad() {
