@@ -98,7 +98,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lW0-l5-iOx" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lW0-l5-iOx" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="22.333333333333314" width="98" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="bys-ZR-k2z"/>
@@ -122,7 +122,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-dM-zDr" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-dM-zDr" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="22.333333333333314" width="98" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="Xg6-xe-kGJ"/>
@@ -314,7 +314,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxd-xU-GYW" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxd-xU-GYW" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="43" width="98" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="RqW-nQ-U8l"/>
@@ -338,7 +338,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-Ax-Dc3" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-Ax-Dc3" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="43" width="98" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="I9C-aP-CPd"/>
@@ -362,7 +362,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnJ-hZ-hET" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnJ-hZ-hET" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="43" width="98" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="QbO-Hj-CCE"/>
@@ -507,7 +507,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYz-y8-kRm" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYz-y8-kRm" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="43" width="98" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="T3s-Gl-qID"/>
@@ -531,7 +531,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="buI-4p-ylR" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="buI-4p-ylR" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="43" width="98" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="BrX-Qx-vvJ"/>
@@ -555,7 +555,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmz-yB-3Mx" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmz-yB-3Mx" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="43" width="98" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="3gd-vO-bmv"/>
@@ -726,7 +726,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Isz-Sx-dF8" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Isz-Sx-dF8" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333314" width="98" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="i2A-oD-ivJ"/>
@@ -750,7 +750,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-aj-e7H" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-aj-e7H" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333314" width="98" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="0mu-YZ-s90"/>
@@ -774,7 +774,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOU-uS-jBV" customClass="CustomTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOU-uS-jBV" customClass="DimensionTextField" customModule="MaterialWeightCalculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333314" width="98" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="DgR-7W-rep"/>

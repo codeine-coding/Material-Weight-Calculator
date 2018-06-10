@@ -20,7 +20,7 @@
 		9FD0007920B1D1960007CA2A /* MaterialWeightCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0007820B1D1960007CA2A /* MaterialWeightCalculatorTests.swift */; };
 		9FD000B120B222320007CA2A /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000B020B222320007CA2A /* Material.swift */; };
 		9FD000B420B2230C0007CA2A /* MaterialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000B320B2230C0007CA2A /* MaterialService.swift */; };
-		9FD000BC20B25E930007CA2A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000BB20B25E930007CA2A /* CustomTextField.swift */; };
+		9FD000BC20B25E930007CA2A /* DimensionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000BB20B25E930007CA2A /* DimensionTextField.swift */; };
 		9FD000BE20B260B60007CA2A /* RadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000BD20B260B60007CA2A /* RadiusButton.swift */; };
 		9FD000C120B32F900007CA2A /* CalculateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD000C020B32F900007CA2A /* CalculateFunctions.swift */; };
 		9FD0EE2D20C9A0CC001AA937 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0EE2C20C9A0CB001AA937 /* Constants.swift */; };
@@ -54,7 +54,7 @@
 		9FD0007A20B1D1960007CA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FD000B020B222320007CA2A /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		9FD000B320B2230C0007CA2A /* MaterialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialService.swift; sourceTree = "<group>"; };
-		9FD000BB20B25E930007CA2A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		9FD000BB20B25E930007CA2A /* DimensionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimensionTextField.swift; sourceTree = "<group>"; };
 		9FD000BD20B260B60007CA2A /* RadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusButton.swift; sourceTree = "<group>"; };
 		9FD000C020B32F900007CA2A /* CalculateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateFunctions.swift; sourceTree = "<group>"; };
 		9FD0EE2C20C9A0CB001AA937 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		9FD000BA20B257D20007CA2A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9FD000BB20B25E930007CA2A /* CustomTextField.swift */,
+				9FD000BB20B25E930007CA2A /* DimensionTextField.swift */,
 				9FD000BD20B260B60007CA2A /* RadiusButton.swift */,
 			);
 			path = View;
@@ -280,7 +280,7 @@
 				9FD000B120B222320007CA2A /* Material.swift in Sources */,
 				9FD0EE2D20C9A0CC001AA937 /* Constants.swift in Sources */,
 				9FD0006420B1D1950007CA2A /* AppDelegate.swift in Sources */,
-				9FD000BC20B25E930007CA2A /* CustomTextField.swift in Sources */,
+				9FD000BC20B25E930007CA2A /* DimensionTextField.swift in Sources */,
 				9FD000BE20B260B60007CA2A /* RadiusButton.swift in Sources */,
 				9FB7945A20C7C3BF007A8519 /* AppExtensions.swift in Sources */,
 				9FB7945620C7A224007A8519 /* SquareTubeWeightVC.swift in Sources */,
