@@ -34,6 +34,7 @@ class RodWeightVC: UIViewController {
     func setupPicker() {
         let materialPicker = UIPickerView()
         materialPicker.delegate = self
+        materialPicker.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         rodMaterialSelect.inputView = materialPicker
         setupToolbar()
         
@@ -44,6 +45,8 @@ class RodWeightVC: UIViewController {
     func setupToolbar() {
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
+        toolbar.tintColor = #colorLiteral(red: 0.3313614726, green: 0.1370666325, blue: 0.4729859829, alpha: 1)
+        toolbar.backgroundColor = #colorLiteral(red: 0.3313614726, green: 0.1370666325, blue: 0.4729859829, alpha: 1)
         
         let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(SheetWeightVC.dismissKeyboard))
         
